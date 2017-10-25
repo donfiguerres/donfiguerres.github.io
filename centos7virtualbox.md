@@ -12,8 +12,8 @@ make[1]: *** [_module_/tmp/vbox.0] Error 2
 make: *** [vboxvideo] Error 2
 ```
 
-More information is in this virtualbox thread: https://forums.virtualbox.org/viewtopic.php?f=1&t=85080
+More information is in this [virtualbox thread](https://forums.virtualbox.org/viewtopic.php?f=1&t=85080)
 
-ticket: https://www.virtualbox.org/ticket/17163
+[virtualbox ticket](https://www.virtualbox.org/ticket/17163)
 
-An updated VirtualBox Guest Additions installer which contains the fix can now be downloaded from the virtualbox website: https://www.virtualbox.org/wiki/Downloads
+An updated VirtualBox Guest Additions installer which contains the fix can now be downloaded from the [virtualbox website](https://www.virtualbox.org/wiki/Downloads).

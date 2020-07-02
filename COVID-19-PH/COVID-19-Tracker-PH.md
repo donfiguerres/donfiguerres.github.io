@@ -4,6 +4,7 @@ This serves as a supplementary tracker for the [COVID-19 Tracker](https://www.do
 
 Disclaimer: I am not affiliated with DOH or any government agency. This is my own personal project.
 
+Update script: [COVID-19-Tracker-PH@GitHub](https://github.com/donfiguerres/COVID-19-Tracker-PH)
 
 ## Reporting
 

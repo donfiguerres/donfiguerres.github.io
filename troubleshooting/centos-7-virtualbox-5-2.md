@@ -1,7 +1,8 @@
 ---
-layout: page
 title: CentOS 7 Virtualbox 5.2 Error
 ---
+
+# CentOS 7 Virtualbox 5.2 Error
 
 A recent linux kernel update (3.10.0-693.2.2.el7.x86_64) caused the VirtualBox Guest Additions 5.2 in my CentOS7 box to break.
 

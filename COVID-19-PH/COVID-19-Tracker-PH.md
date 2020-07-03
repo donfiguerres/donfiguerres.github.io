@@ -6,16 +6,14 @@ Disclaimer: I am not affiliated with DOH or any government agency. This is my ow
 
 Update script: [COVID-19-Tracker-PH@GitHub](https://github.com/donfiguerres/COVID-19-Tracker-PH)
 
+## Links
+
+[Last 14 Days](Last-14-Days.md)
+
+## Testing
+![test_daily_output_positive_individuals](images/test_daily_output_positive_individuals.png)
+
 ## Reporting
-
-### Last 14 Days
-![SpecimenToRelease14days](images/SpecimenToRelease14days.png)
-
-![ReleaseToRepConf14days](images/ReleaseToRepConf14days.png)
-
-![SpecimenToRepConf14days](images/SpecimenToRepConf14days.png)
-
-### Overall
 ![SpecimenToRelease](images/SpecimenToRelease.png)
 
 ![ReleaseToRepConf](images/ReleaseToRepConf.png)

@@ -7,10 +7,10 @@ This serves as a supplementary tracker for the [COVID-19 Tracker](https://www.do
 Update script: [COVID-19-Tracker-PH@GitHub](https://github.com/donfiguerres/COVID-19-Tracker-PH)
 
 ## Other Useful Trackers
-* https://covid19stats.ph/
-* https://covid19ph.com/
-* http://endcov19.baguio.gov.ph/
-* https://ourworldindata.org/coronavirus-data-explorer
+* [covid19stats.ph](https://covid19stats.ph/)
+* [covid19ph](https://covid19ph.com/)
+* [Baguio Covid19 Tracker](http://endcov19.baguio.gov.ph/)
+* [Our World in Data](https://ourworldindata.org/coronavirus-data-explorer)
 
 ## Links
 

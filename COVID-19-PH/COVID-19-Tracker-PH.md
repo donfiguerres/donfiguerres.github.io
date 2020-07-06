@@ -16,8 +16,11 @@ Update script: [COVID-19-Tracker-PH@GitHub](https://github.com/donfiguerres/COVI
 
 [Last 14 Days](Last-14-Days.md)
 
+## Confirmed Cases
+![DateOnset](images/DateOnset.png)
+
 ## Testing
-![test_daily_output_positive_individuals](images/test_daily_output_positive_individuals.png)
+![test_daily_output_positive_individuals](images/daily_output_positive_individuals.png)
 
 ## Reporting
 ![SpecimenToRelease](images/SpecimenToRelease.png)

@@ -1,7 +1,7 @@
 remote_theme: donfiguerres/devlopr-jekyll
 
-title: devlopr
-subtitle: A Portfolio Jekyll Theme Built for Developers
+title: donfiguerres
+subtitle: Software Developer
 description: >- # this means to ignore newlines until "baseurl:"
   devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.
 url: "donfiguerres.github.io" # the base hostname & protocol for your site, e.g. https://example.github.io
@@ -38,26 +38,20 @@ typewrite-text: devlopr is a jekyll theme built for developers. You can edit thi
 
 # Experiences
 author_work_experiences:
-            - company_name: Google
-              company_logo: google.png
-              company_url: https://google.com
-              designation: Software Engineer
-              description: Worked on various Google Products
-              visibility: true
-            - company_name: Microsoft
-              company_logo: microsoft.png
-              company_url: https://microsoft.com
-              designation: Azure Developer
-              description: Worked on various Azure Cloud Products
+            - company_name: Infor
+              company_logo: logo-infor.png
+              company_url: https://www.infor.com
+              designation: Senior Software Engineer
+              description: Lead Developer for the LSF Multi-Database System
               visibility: true
 
 # Education
 author_education_details:
-              - college_logo: mit.png
-                college_name: MIT
-                college_url: https://mit.org
-                college_degree: CS Engineer
-                description: Bachelor of Technology
+              - college_logo: SLU_logo.jpg
+                college_name: SLU
+                college_url: https://www.slu.edu.ph
+                college_degree: BS ECE
+                description: Bachelor of Science in Electronics Engineering
                 visibility: true
 
 # Projects
@@ -72,7 +66,7 @@ author_project_details:
 #twitter_username: johndoe
 github_username: donfiguerres
 #facebook_username: johndoe
-linkedin_username: johndoe
+linkedin_username: lyndon-figuerres
 #behance_username: johndoe
 instagram_username: donfiggy
 #medium_username: johndoe

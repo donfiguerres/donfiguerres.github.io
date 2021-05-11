@@ -1,0 +1,7 @@
+# dev env
+.vscode
+*.code-workspace
+
+# build output
+Gemfile.lock
+/_site

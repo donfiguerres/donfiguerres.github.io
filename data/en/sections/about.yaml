@@ -1,0 +1,40 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Senior Software Engineer
+# your company information
+company:
+  name: Infor
+  url: "https://www.infor.com"
+
+# your resume. this file path should be relative to you "static" directory
+#resume: "files/resume.pdf"
+
+# a summary about you
+summary: >
+  I am a passionate software engineer with 9 years of working experience.
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+- name: Github
+  icon: "fab fa-github"
+  url: "https://github.com/donfiguerres"
+
+# your soft skills
+# give the percentage between 50 to 100 with 5 intervals.
+# currently supported colors: blue, yellow, pink, green, sky, orange
+softSkills:
+- name: Leadership
+  percentage: 85
+  color: blue
+- name: Team Work
+  percentage: 90
+  color: yellow

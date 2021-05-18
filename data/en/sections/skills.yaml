@@ -13,19 +13,30 @@ section:
 skills:
 - name: C/C++ Programming
   logo: "/images/logo/cpp_logo.png"
-  summary: "Primary programming language ."
+  summary: "Primary programming language for professional software development.
+  Wide range of  experience from embedded programming to Windows desktop GUI to
+  ERP backend services. Capable of writing scalable, testable, and maintainable
+  programs."
   url: "https://isocpp.org"
 
 - name: Python Programming
   logo: "/images/logo/python-logo-notext.png"
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
+  summary: "Primary programming language for automation, data analytics, and
+  prototyping. Have used both for professional development and personal
+  projects."
   url: "https://www.python.org"
 
 - name: Java Programming
-  #icon: "/images/logo/java-logo.png"
-  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-  url: "https://golang.org/"
+  logo: "/images/logo/java-logo.png"
+  summary: "Experienced using Java for web backend development. Have used JNI
+  to integrate native code written in C with Java code that runs on a Java EE
+  application server."
+  url: "https://www.java.com"
 
-- name: Cloud Computing
+- name: Linux
+  #icon: "/images/sections/skills/cloud.png"
+  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
+
+- name: Windows
   #icon: "/images/sections/skills/cloud.png"
   summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."

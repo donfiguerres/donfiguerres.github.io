@@ -11,16 +11,21 @@ section:
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-- name: Kubernetes
-  icon: "/images/sections/skills/kubernetes.png"
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-  url: "https://kubernetes.io/"
+- name: C/C++ Programming
+  logo: "/images/logo/cpp_logo.png"
+  summary: "Primary programming language ."
+  url: "https://isocpp.org"
 
-- name: Go Development
-  icon: "/images/sections/skills/go.png"
+- name: Python Programming
+  logo: "/images/logo/python-logo-notext.png"
+  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
+  url: "https://www.python.org"
+
+- name: Java Programming
+  #icon: "/images/logo/java-logo.png"
   summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
   url: "https://golang.org/"
 
 - name: Cloud Computing
-  icon: "/images/sections/skills/cloud.png"
+  #icon: "/images/sections/skills/cloud.png"
   summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."

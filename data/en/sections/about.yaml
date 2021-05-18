@@ -38,3 +38,9 @@ softSkills:
 - name: Agile
   percentage: 80
   color: yellow
+- name: SDLC
+  percentage: 80
+  color: yellow
+- name: Fast Learner
+  percentage: 95
+  color: orange

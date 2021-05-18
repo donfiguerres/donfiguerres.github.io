@@ -45,3 +45,5 @@ params:
   # Currently, you can just hide it from the footer.
   newsletter:
     enable: true
+  
+  background: /images/sunset20200425.jpg

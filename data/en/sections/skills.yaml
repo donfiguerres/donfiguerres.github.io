@@ -34,9 +34,10 @@ skills:
   url: "https://www.java.com"
 
 - name: Linux
-  #icon: "/images/sections/skills/cloud.png"
+  logo: "/images/logo/linux-tux.png"
   summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
+  url: "https://www.linux.org"
 
 - name: Windows
-  #icon: "/images/sections/skills/cloud.png"
+  logo: "/images/logo/windows-logo.png"
   summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."

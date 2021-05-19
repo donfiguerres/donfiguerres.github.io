@@ -30,14 +30,22 @@ skills:
   logo: "/images/logo/java-logo.png"
   summary: "Experienced using Java for web backend development. Have used JNI
   to integrate native code written in C with Java code that runs on a Java EE
-  application server."
+  application server. Also used JDBC for database connection."
   url: "https://www.java.com"
 
 - name: Linux
   logo: "/images/logo/linux-tux.png"
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
+  summary: "Worked with most of the major distros - RHEL, CentOS, Ubuntu. Worked
+  with other Unix based systems - AIX, Solaris, HP-UX."
   url: "https://www.linux.org"
 
 - name: Windows
   logo: "/images/logo/windows-logo.png"
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
+  summary: "Develooped Windows desktop GUI applications using MFC. Worked with
+  Windows Server OS for ERP system development."
+  url: "https://www.microsoft.com/en-us/windows"
+
+- name: SQL
+  summary: "Worked with several relational database systems - SQL Server,
+  Oracle"
+  url: "https://en.wikipedia.org/wiki/SQL"

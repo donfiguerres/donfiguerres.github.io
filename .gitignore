@@ -3,6 +3,5 @@
 *.code-workspace
 
 # build output
-Gemfile.lock
-/_site
 resources
+public

@@ -1,3 +1,7 @@
 # donfiguerres GitHub Pages
 
-Go to [COVID-19 Tracker](https://donfiguerres.github.io/COVID-19-Tracker-PH/)
+This is the repo for my personal webite at GitHub Pages.
+
+# TODO
+- Dark mode
+- Add post

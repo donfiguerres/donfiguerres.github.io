@@ -1,5 +1,11 @@
 ---
-title: CentOS 7 Virtualbox 5.2 Error
+title: "CentOS 7 VirtualBox 5.2 Error"
+description: "Error in CentOS after updating VirtualBox to 5.2"
+date: 2017-10-25
+menu:
+  sidebar:
+    name: "CentOS 7 VirtualBox 5.2 Error"
+    identifier: troubleshooting
 ---
 
 # CentOS 7 Virtualbox 5.2 Error

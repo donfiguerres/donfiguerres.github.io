@@ -12,8 +12,5 @@ image: /images/profile_cropped.jpg
 
 # some summary about what you do
 summary:
-  - I am a Developer
-  - I am a Devops
-  - I love servers
-  - I work on open-source projects
-  - I love to work with some fun projects
+  - I am a developer
+  - I love to code

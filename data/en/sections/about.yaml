@@ -8,25 +8,34 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Senior Software Engineer
+designation: Software Engineer
 # your company information
-company:
-  name: Infor
-  url: "https://www.infor.com"
+#company:
+#  name: Infor
+#  url: "https://www.infor.com"
 
 # your resume. this file path should be relative to you "static" directory
 #resume: "files/resume.pdf"
 
 # a summary about you
-summary: >
-  I am a passionate software engineer with 9 years of working experience.
+summary: "I am a software engineer with 9 years of working experience.
+My experience is pretty diverse - from automated electrical tests to embedded
+programming to Windows desktop GUI to enterprise applications deployed to the
+cloud."
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
 - name: Github
   icon: "fab fa-github"
-  url: "https://github.com/donfiguerres"
+  url: "https://github.com/donfiguerres/"
+- name: Github
+  icon: "fab fa-stack-overflow"
+  url: "https://stackoverflow.com/users/4097451/donfiguerres"
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/lyndon-figuerres/"
+
 
 # your soft skills
 # give the percentage between 50 to 100 with 5 intervals.
@@ -36,9 +45,6 @@ softSkills:
   percentage: 80
   color: blue
 - name: Agile
-  percentage: 80
-  color: yellow
-- name: SDLC
   percentage: 80
   color: yellow
 - name: Fast Learner

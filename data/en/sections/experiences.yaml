@@ -11,32 +11,46 @@ section:
 # Your experiences
 experiences:
 - company:
-    name: Infor
-    url: "https://www.example.com"
-    location: Dhaka Branch
+    name: Infor PSSC
+    url: "https://www.infor.com"
+    location: Taguig
     # company overview
-    overview: Example Co. is a widely recognized company for cloud-native development. It builds tools for Kubernetes.
+    overview: "Infor is a software company that focuses on business applications
+      for organizations delivered via cloud computing as a service."
   positions:
   - designation: Senior Software Engineer
-    start: Nov 2019
+    start: January 2017
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Design and develop XYZ tool for ABC task
-    - Design, develop and manage disaster recovery tool [Xtool](https://www.example.com) that backup Kubernetes volumes, databases, and cluster's resource definition.
-    - Lead backend team.
+    - Lead developer for the Lawson System Foundation Multi-Database System
 
 - company:
-    name: PreExample Co.
-    url: "https://www.preexample.com"
-    location: Nowhere
-    overview: PreExample Co. is a gateway company to enter into Example co. So, nothing special here.
+    name: RHOM LSI Design Philippines
+    url: "https://www.rohm.com"
+    location: Pasig
+    overview: ROHM is a  Japanese electronic parts manufacturer based in Kyoto, Japan.
   positions:
-  - designation: Software Engineer
-    start: March 2016
-    end: May 2017
+  - designation: Senior Programmer
+    start: September 2014
+    end: January 2017
     responsibilities:
-    - Write lots of example codes.
-    - Read lots of examples.
-    - See lots of example videos.
+    - Design and write testable and maintainable code for GUI Applications used for IC product development and demos.
+    - Maintainance of the proprietary development tools for microcoontrollers.
+
+- company:
+    name: Texas Instruments Philippines Inc.
+    url: "https://www.ti.com"
+    location: Baguio
+    overview: "Texas Instruments Incorporated is an American technology company
+    headquartered in Dallas, Texas, that designs and manufactures semiconductors
+    and various integrated circuits, which it sells to electronics designers and
+    manufacturers globally."
+  positions:
+  - designation: Senior Programmer
+    start: December 2011
+    end: September 2014
+    responsibilities:
+    - Central resource for product offload and support at the A/T site.
+    - Validation and improvements of products' automated electrical test programs.

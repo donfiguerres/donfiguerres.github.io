@@ -15,8 +15,7 @@ skills:
   logo: "/images/logo/cpp_logo.png"
   summary: "Primary programming language for professional software development.
   Wide range of  experience from embedded programming to Windows desktop GUI to
-  ERP backend services. Capable of writing scalable, testable, and maintainable
-  programs."
+  ERP backend services."
   url: "https://isocpp.org"
 
 - name: Python Programming
@@ -47,5 +46,5 @@ skills:
 
 - name: SQL
   summary: "Worked with several relational database systems - SQL Server,
-  Oracle"
+  Oracle. "
   url: "https://en.wikipedia.org/wiki/SQL"

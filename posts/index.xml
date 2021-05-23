@@ -50,7 +50,4 @@ Initial setup Search depends on additional output content type of JSON in config
 No content shown here is rendered, all content is based in the template layouts/page/search.html
 Setting a very low sitemap priority will tell search engines this is not important content.
 This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>CentOS 7 VirtualBox 5.2 Error</title><link>https://donfiguerres.github.io/posts/centos-7-virtualbox-5-2/</link><pubDate>Wed, 25 Oct 2017 00:00:00 +0000</pubDate><guid>https://donfiguerres.github.io/posts/centos-7-virtualbox-5-2/</guid><description>CentOS 7 Virtualbox 5.2 Error A recent linux kernel update (3.10.0-693.2.2.el7.x86_64) caused the VirtualBox Guest Additions 5.2 in my CentOS7 box to break.
-Error message:
-/tmp/vbox.0/hgsmi_base.c: In function ‘hgsmi_send_caps_info’: /tmp/vbox.0/hgsmi_base.c:99:2: error: implicit declaration of function ‘AssertRC’ [-Werror=implicit-function-declaration] AssertRC(p-&amp;gt;rc);^M ^ cc1: some warnings being treated as errors make[2]: *** [/tmp/vbox.0/hgsmi_base.o] Error 1 make[1]: *** [_module_/tmp/vbox.0] Error 2 make: *** [vboxvideo] Error 2 More information is in this virtualbox thread
-virtualbox ticket</description></item></channel></rss>
+Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item></channel></rss>

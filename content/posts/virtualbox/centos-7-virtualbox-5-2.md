@@ -6,6 +6,7 @@ menu:
   sidebar:
     name: "CentOS 7 VirtualBox 5.2 Error"
     identifier: centos-7-virtualbox-5.2-error
+    parent: virtualbox
 ---
 
 ## Issue

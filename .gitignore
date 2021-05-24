@@ -2,6 +2,9 @@
 .vscode
 *.code-workspace
 
+# modules
+node_modules
+
 # build output
 resources
 public

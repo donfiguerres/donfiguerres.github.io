@@ -29,6 +29,11 @@ outputs:
 # Enable global emoji support
 enableEmoji: true
 
+module:
+  mounts:
+  - source: node_modules
+    target: static/js/node_modules
+
 # Site parameters
 params:
   # GitHub repo URL and branch of your site
@@ -47,3 +52,8 @@ params:
     enable: true
   
   background: /images/sunset20200425.jpg
+
+  # Dark theme toggle
+  darkTheme:
+    enable: true
+    default: dark

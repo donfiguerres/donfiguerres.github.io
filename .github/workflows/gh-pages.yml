@@ -26,10 +26,8 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Install depenencies
-        run: npm install
-
       - name: Build
+        run: npm ci
         run: hugo --minify
 
       - name: Deploy

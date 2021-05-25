@@ -1,0 +1,18 @@
+# section information
+section:
+  name: Education
+  id: education
+  template: sections/education.html # Use "sections/education-alt.html for alternate template.
+  enable: true
+  weight: 6
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+degrees:
+- name: BS Electronics Engineering
+  icon: fa-graduation-cap
+  timeframe: 2006-2011
+  institution:
+    name: Saint Louis University
+    url: "https://www.slu.edu.ph/"

@@ -35,6 +35,10 @@ socialLinks:
 - name: LinkedIn
   icon: "fab fa-linkedin"
   url: "https://www.linkedin.com/in/lyndon-figuerres/"
+- name: Instagram
+  icon: "fab fa-instagram"
+  url: "https://www.instagram.com/donfiggy/"
+
 
 
 # your soft skills

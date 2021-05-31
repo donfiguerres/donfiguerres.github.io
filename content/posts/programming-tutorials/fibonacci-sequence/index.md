@@ -8,7 +8,6 @@ menu:
     name: "Fibonacci Sequence"
     identifier: fibonacci-sequence
     parent: programming-tutorials
-#draft: true
 ---
 
 The Fibonacci sequence is a series of numbers where a number is the addition

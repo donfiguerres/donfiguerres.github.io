@@ -11,40 +11,52 @@ section:
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-- name: C/C++ Programming
-  logo: "/images/logo/cpp_logo.png"
-  summary: "Primary programming language for professional software development.
-  Wide range of  experience from embedded programming to Windows desktop GUI to
-  ERP backend services."
-  url: "https://isocpp.org"
-
-- name: Python Programming
+- name: Python
   logo: "/images/logo/python-logo-notext.png"
-  summary: "Primary programming language for automation, data analytics, and
-  prototyping. Have used both for professional development and personal
-  projects."
+  summary: "Python is my primary programming language for automation, data
+  analytics, and prototyping. Have used both for professional development and
+  personal projects. It's probably my favorite programming language due to its
+  ease of use and wide community support which allows us to do just about
+  anything with Python."
   url: "https://www.python.org"
 
-- name: Java Programming
+- name: C
+  logo: "/images/logo/c_logo.png"
+  summary: "My experience in C ranges from embedded programming to CLI tools
+  to ERP backend services. Right now, I'm mainly working on services (daemon in
+  *nix platforms and Services in Windows) and CLI tools. I've also worked on
+  a C compiler and an assembler - both written in C - in ROHM."
+  url: "https://en.cppreference.com/"
+
+- name: C++
+  logo: "/images/logo/cpp_logo.png"
+  summary: "My experience in C++ ranges from Windows desktop GUI to ERP backend
+  services. Currently, I'm working on 'database drivers' written in C++ that
+  connect our business logic and web services layer to the database. I've also
+  worked on C++ GUI applications in ROHM."
+  url: "https://isocpp.org"
+
+- name: Java
   logo: "/images/logo/java-logo.png"
-  summary: "Experienced using Java for web backend development. Have used JNI
-  to integrate native code written in C with Java code that runs on a Java EE
-  application server. Also used JDBC for database connection."
+  summary: "I've experienced using Java for web backend development. I have used
+  JNI to integrate native code written in C with Java code that runs on a
+  Java EE application server. I have also used JDBC for database connection."
   url: "https://www.java.com"
 
 - name: Linux
   logo: "/images/logo/linux-tux.png"
-  summary: "Worked with most of the major distros - RHEL, CentOS, Ubuntu. Worked
-  with other Unix based systems - AIX, Solaris, HP-UX."
+  summary: "I've worked with most of the major distros - RHEL, CentOS, Ubuntu.
+  Although not GNU/Linux, I've also worked with other Unix based systems like
+  AIX, Solaris, and HP-UX."
   url: "https://www.linux.org"
 
 - name: Windows
   logo: "/images/logo/windows-logo.png"
-  summary: "Developed Windows desktop GUI applications using MFC. Worked with
-  Windows Server OS for ERP system development."
+  summary: "I've developed Windows desktop GUI applications using MFC. Currently
+  I'm working with Windows Server OS for ERP system development."
   url: "https://www.microsoft.com/en-us/windows"
 
 - name: SQL
-  summary: "Worked with several relational database systems - SQL Server,
+  summary: "I've worked with several relational database systems - SQL Server,
   Oracle. "
   url: "https://en.wikipedia.org/wiki/SQL"

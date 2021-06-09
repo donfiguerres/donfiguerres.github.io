@@ -14,10 +14,10 @@ skills:
 - name: Python
   logo: "/images/logo/python-logo-notext.png"
   summary: "Python is my primary programming language for automation, data
-  analytics, and prototyping. Have used both for professional development and
-  personal projects. It's probably my favorite programming language due to its
-  ease of use and wide community support which allows us to do just about
-  anything with Python."
+  analytics, and prototyping. Have used both for professional software 
+  development and for personal projects. It's probably my favorite programming
+  language due to its ease of use and wide community support which allows us to
+  do just about anything with Python."
   url: "https://www.python.org"
 
 - name: C
@@ -33,7 +33,8 @@ skills:
   summary: "My experience in C++ ranges from Windows desktop GUI to ERP backend
   services. Currently, I'm working on 'database drivers' written in C++ that
   connect our business logic and web services layer to the database. I've also
-  worked on C++ GUI applications in ROHM."
+  worked on C++ GUI applications in ROHM. C++ is where I mostly learned about
+  object oriented programming."
   url: "https://isocpp.org"
 
 - name: Java

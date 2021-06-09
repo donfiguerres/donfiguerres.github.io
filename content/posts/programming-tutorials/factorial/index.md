@@ -2,6 +2,7 @@
 title: "Factorial"
 description: "Tutorial for calculating the factorial"
 date: 2021-06-01T02:57:52+08:00
+hero: images/pexels-pixabay-209224.jpg
 menu:
   sidebar:
     name: "Factorial"

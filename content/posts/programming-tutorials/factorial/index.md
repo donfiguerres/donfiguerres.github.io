@@ -43,7 +43,7 @@ def factorial(n):
         n -= 1
     return result
 
-n = int(input("Enter n: "))
+n = int(input("Enter a positive integer: "))
 if n < 0:
     print("Must enter a positive integer.")
     exit(1)
@@ -64,7 +64,7 @@ def factorial(n):
         return 1
     return n * factorial(n - 1)
 
-n = int(input("Enter n: "))
+n = int(input("Enter a positive integer: "))
 if n < 0:
     print("Must enter a positive integer.")
     exit(1)

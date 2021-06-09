@@ -23,7 +23,9 @@ programming or a new programming language.
 Typically, there are two implementations of the Fibonacci sequence - (1) the
 iterative algorithm and (2) the recursive algorithm. 
 
-I have written here both iterative and recursive implementations. For each implementation, I've also written both the ascending order and the descending (reverse) order implementations.
+I have written here both iterative and recursive implementations. For each 
+implementation, I've also written both the ascending order and the descending 
+(reverse) order implementations.
 
 
 ## Iterative Implementation

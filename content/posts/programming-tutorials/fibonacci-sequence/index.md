@@ -12,9 +12,9 @@ menu:
 
 The Fibonacci sequence is a series of numbers where a number is the addition
 of the last two numbers. This is one of the basic forms of exercise used in
-programming is almost always present in a programming exam. Therefore, learning
-how to print the Fibonacci sequence is essential to anyone learning programming
-or a new programming language.
+programming and is almost always present in a programming exam. Therefore, 
+learning how to print the Fibonacci sequence is essential to anyone learning 
+programming or a new programming language.
 
 ```
 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377

@@ -34,3 +34,6 @@ git update-ref -d refs/original/refs/heads/master
 rm -rf .git/refs/original
 
 git push --force --tags origin HEAD:master
+
+
+source: https://stackoverflow.com/questions/750172/how-to-change-the-author-and-committer-name-and-e-mail-of-multiple-commits-in-gi/4903673

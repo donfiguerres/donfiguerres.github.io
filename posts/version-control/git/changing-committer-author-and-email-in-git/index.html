@@ -1,6 +1,6 @@
 <!doctype html><html>
 <head>
-<title>Categories</title>
+<title>Changing Committer, Author, and Email in Git</title>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta http-equiv=x-ua-compatible content="ie=edge">
@@ -14,7 +14,9 @@
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css>
 <link rel=icon type=image/png href=/images/favicon_hu8376fd15465fef26ffe66b6bcf0ca686_13669_42x0_resize_box_3.png>
 <link rel=stylesheet href=/css/style.css>
-<link rel=stylesheet href=/css/layouts/list.css>
+<meta name=description content="Changing the ">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css>
+<link rel=stylesheet href=/css/layouts/single.css>
 <link rel=stylesheet href=/css/navigators/sidebar.css>
 </head>
 <body data-spy=scroll data-target=#TableOfContents data-offset=80>
@@ -46,12 +48,12 @@
 </form>
 <div class=sidebar-tree>
 <ul class=tree id=tree>
-<li id=list-heading><a href=/categories data-filter=all></a></li>
+<li id=list-heading><a href=/posts data-filter=all>Posts</a></li>
 <div class=subtree>
 <li>
-<i class="fas fa-plus-circle"></i><a href=/posts/version-control/git/>Git</a>
-<ul>
-<li><a href=/posts/version-control/git/changing-committer-author-and-email-in-git/ title="Changing Committer, Author, and Email in Git">Changing Committer, Author, and Email in Git</a></li>
+<i class="fas fa-minus-circle"></i><a class=active href=/posts/version-control/git/>Git</a>
+<ul class=active>
+<li><a class=active href=/posts/version-control/git/changing-committer-author-and-email-in-git/ title="Changing Committer, Author, and Email in Git">Changing Committer, Author, and Email in Git</a></li>
 </ul>
 </li>
 <li>
@@ -74,10 +76,68 @@
 </div>
 </section>
 <section class=content-section id=content-section>
-<div class="content container-fluid" id=content>
-<div class="container-fluid post-card-holder" id=post-card-holder>
+<div class=content>
+<div class="container p-0 read-area">
+<div class="hero-area col-sm-12" id=hero-area style=background-image:url(https://donfiguerres.github.io/posts/version-control/git/changing-committer-author-and-email-in-git/images/commit-logs.jpg)>
 </div>
-<div class=paginator>
+<div class=page-content>
+<div class="author-profile ml-auto align-self-lg-center">
+<img class=rounded-circle src=/images/profile_cropped.jpg alt="Author Image">
+<h5 class=author-name>Don Figuerres</h5>
+<p>August 10, 2021</p>
+</div>
+<div class=title>
+<h1>Changing Committer, Author, and Email in Git</h1>
+</div>
+<div class=post-content id=post-content>
+<p><strong>NOTE</strong>: to be updated</p>
+<p>For local</p>
+<p>git config &ndash;global user.name &ldquo;you name&rdquo;
+git config &ndash;global user.email <a href=mailto:you@domain.com>you@domain.com</a>
+git commit &ndash;amend &ndash;reset-author</p>
+<p>Change in remote
+git filter-branch -f &ndash;env-filter '
+GIT_AUTHOR_EMAIL=&ldquo;<a href=mailto:lyndonfiguerres@gmail.com>lyndonfiguerres@gmail.com</a>&rdquo;
+GIT_COMMITTER_EMAIL=&ldquo;<a href=mailto:lyndonfiguerres@gmail.com>lyndonfiguerres@gmail.com</a>&rdquo;
+' HEAD</p>
+<p>git log &ndash;pretty=format:"[%h] %cd - Committer: %cn (%ce), Author: %an (%ae)"</p>
+<p>git update-ref -d refs/original/refs/heads/master</p>
+<p>rm -rf .git/refs/original</p>
+<p>git push &ndash;force &ndash;tags origin HEAD:master</p>
+</div>
+<div class=btn-improve-page>
+<a href=https://github.com/donfiguerres/donfiguerres.github.io/edit/main/content/posts/version-control/git/changing-committer-author-and-email-in-git/index.md title="Improve this page" target=_blank rel=noopener>
+<i class="fas fa-code-branch"></i>
+Improve this page
+</a>
+</div>
+<hr>
+<div class="row next-prev-navigator">
+<div class="col-md-6 previous-article">
+<a href=/search/ title="অনুসন্ধানের ফলাফল" class="btn btn-outline-info">
+<div><i class="fas fa-chevron-circle-left"></i> Prev</div>
+<div class=next-prev-text>অনুসন্ধানের ফলাফল</div>
+</a>
+</div>
+<div class="col-md-6 next-article">
+<a href=/posts/programming-tutorials/factorial/ title=Factorial class="btn btn-outline-info">
+<div>Next <i class="fas fa-chevron-circle-right"></i></div>
+<div class=next-prev-text>Factorial</div>
+</a>
+</div>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<a id=scroll-to-top class=btn><i class="fas fa-chevron-circle-up"></i></a>
+</section>
+<section class=toc-section id=toc-section>
+<div class=toc-holder>
+<h5 class="text-center pl-3">Table of Contents</h5>
+<hr>
+<div class=toc>
+<nav id=TableOfContents></nav>
 </div>
 </div>
 </section>
@@ -152,6 +212,8 @@ Toha
 <script type=text/javascript src=/js/main.js></script>
 <script type=text/javascript src=/js/node_modules/darkreader/darkreader.js></script>
 <script type=text/javascript src=/js/darkmode.js></script>
-<script src=/js/list.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js></script>
+<script src=/js/single.js></script>
+<script>hljs.initHighlightingOnLoad()</script>
 </body>
 </html>

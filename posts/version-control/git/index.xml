@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git on Don Figuerres</title><link>https://donfiguerres.github.io/posts/version-control/git/</link><description>Recent content in Git on Don Figuerres</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://donfiguerres.github.io/posts/version-control/git/index.xml" rel="self" type="application/rss+xml"/><item><title>Changing Committer, Author, and Email in Git</title><link>https://donfiguerres.github.io/posts/version-control/git/changing-committer-author-and-email-in-git/</link><pubDate>Tue, 10 Aug 2021 00:12:25 +0800</pubDate><guid>https://donfiguerres.github.io/posts/version-control/git/changing-committer-author-and-email-in-git/</guid><description>NOTE: to be updated
+For local
+git config &amp;ndash;global user.name &amp;ldquo;you name&amp;rdquo; git config &amp;ndash;global user.email you@domain.com git commit &amp;ndash;amend &amp;ndash;reset-author
+Change in remote git filter-branch -f &amp;ndash;env-filter ' GIT_AUTHOR_EMAIL=&amp;ldquo;lyndonfiguerres@gmail.com&amp;rdquo; GIT_COMMITTER_EMAIL=&amp;ldquo;lyndonfiguerres@gmail.com&amp;rdquo; ' HEAD
+git log &amp;ndash;pretty=format:&amp;quot;[%h] %cd - Committer: %cn (%ce), Author: %an (%ae)&amp;quot;
+git update-ref -d refs/original/refs/heads/master
+rm -rf .git/refs/original
+git push &amp;ndash;force &amp;ndash;tags origin HEAD:master</description></item></channel></rss>

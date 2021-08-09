@@ -1,19 +1,239 @@
-<!doctype html><html><head><title>Posts</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="ie=edge"><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/layouts/main.css><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/navigators/navbar.css><link rel=stylesheet href=/css/plyr.css><link rel=stylesheet href=/css/flag-icon.min.css><link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel=stylesheet><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css><link rel=icon type=image/png href=/images/favicon_hu8376fd15465fef26ffe66b6bcf0ca686_13669_42x0_resize_box_2.png><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/layouts/list.css><link rel=stylesheet href=/css/navigators/sidebar.css></head><body data-spy=scroll data-target=#TableOfContents data-offset=80><div id=themeInitialization style=display:none default-theme=" dark "></div><div class="container-fluid bg-dimmed wrapper"><nav class="navbar navbar-expand-xl top-navbar final-navbar shadow"><div class=container><button class="navbar-toggler navbar-light" id=sidebar-toggler type=button onclick=toggleSidebar()>
-<span class=navbar-toggler-icon></span></button>
-<a class=navbar-brand href=/><img src=/images/main-logo_hu864bbe108f1be1ae04b57f7f2fd9d631_5637_42x0_resize_box_2.png alt=Logo>Don Figuerres</a>
+<!doctype html><html>
+<head>
+<title>Posts</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="ie=edge">
+<link rel=stylesheet href=/css/bootstrap.min.css>
+<link rel=stylesheet href=/css/layouts/main.css>
+<link rel=stylesheet href=/css/style.css>
+<link rel=stylesheet href=/css/navigators/navbar.css>
+<link rel=stylesheet href=/css/plyr.css>
+<link rel=stylesheet href=/css/flag-icon.min.css>
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel=stylesheet>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css>
+<link rel=icon type=image/png href=/images/favicon_hu8376fd15465fef26ffe66b6bcf0ca686_13669_42x0_resize_box_3.png>
+<link rel=stylesheet href=/css/style.css>
+<link rel=stylesheet href=/css/layouts/list.css>
+<link rel=stylesheet href=/css/navigators/sidebar.css>
+</head>
+<body data-spy=scroll data-target=#TableOfContents data-offset=80>
+<div id=themeInitialization style=display:none default-theme=" dark "></div>
+<div class="container-fluid bg-dimmed wrapper">
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+<div class=container>
+<button class="navbar-toggler navbar-light" id=sidebar-toggler type=button onclick=toggleSidebar()>
+<span class=navbar-toggler-icon></span>
+</button>
+<a class=navbar-brand href=/>
+<img src=/images/main-logo_hu864bbe108f1be1ae04b57f7f2fd9d631_5637_42x0_resize_box_3.png alt=Logo>Don Figuerres</a>
 <button class="navbar-toggler navbar-light" id=toc-toggler type=button onclick=toggleTOC()>
-<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse lang-selector" id=top-nav-items><ul class="navbar-nav ml-auto"></ul></div></div><img src=/images/main-logo_hu864bbe108f1be1ae04b57f7f2fd9d631_5637_42x0_resize_box_2.png class=d-none id=main-logo alt=Logo>
-<img src=/images/inverted-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_42x0_resize_box_2.png class=d-none id=inverted-logo alt="Inverted Logo"></nav><section class=sidebar-section id=sidebar-section><div class=sidebar-holder><div class=sidebar id=sidebar><form class=mx-auto method=get action=/search><input type=text name=keyword placeholder=Search data-search id=search-box></form><div class=sidebar-tree><ul class=tree id=tree><li id=list-heading><a href=/posts data-filter=all>Posts</a></li><div class=subtree><li><i class="fas fa-plus-circle"></i><a href=/posts/programming-tutorials/>Programming Tutorials</a><ul><li><a href=/posts/programming-tutorials/factorial/ title=Factorial>Factorial</a></li><li><a href=/posts/programming-tutorials/fibonacci-sequence/ title="Fibonacci Sequence">Fibonacci Sequence</a></li></ul></li><li><i class="fas fa-plus-circle"></i><a href=/posts/virtualbox/>Virtualbox</a><ul><li><a href=/posts/virtualbox/centos-7-virtualbox-5-2/ title="CentOS 7 VirtualBox 5.2 Error">CentOS 7 VirtualBox 5.2 Error</a></li></ul></li></div></ul></div></div></div></section><section class=content-section id=content-section><div class="content container-fluid" id=content><div class="container-fluid post-card-holder" id=post-card-holder><div class=post-card><a href=/posts/programming-tutorials/factorial/ class=post-card-link><div class=card><div class=card-head><img class=card-img-top src=/posts/programming-tutorials/factorial/images/pexels-pixabay-209224.jpg alt="Hero Image"></div><div class=card-body><h5 class=card-title>Factorial</h5><p class="card-text post-summary">Factorial is the product of all positive integers less than or equal to a given positive integer and denoted by that integer and an exclamation point.
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse lang-selector" id=top-nav-items>
+<ul class="navbar-nav ml-auto">
+</ul>
+</div>
+</div>
+<img src=/images/main-logo_hu864bbe108f1be1ae04b57f7f2fd9d631_5637_42x0_resize_box_3.png class=d-none id=main-logo alt=Logo>
+<img src=/images/inverted-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_42x0_resize_box_3.png class=d-none id=inverted-logo alt="Inverted Logo">
+</nav>
+<section class=sidebar-section id=sidebar-section>
+<div class=sidebar-holder>
+<div class=sidebar id=sidebar>
+<form class=mx-auto method=get action=/search>
+<input type=text name=keyword placeholder=Search data-search id=search-box>
+</form>
+<div class=sidebar-tree>
+<ul class=tree id=tree>
+<li id=list-heading><a href=/posts data-filter=all>Posts</a></li>
+<div class=subtree>
+<li>
+<i class="fas fa-plus-circle"></i><a href=/posts/version-control/git/>Git</a>
+<ul>
+<li><a href=/posts/version-control/git/changing-committer-author-and-email-in-git/ title="Changing Committer, Author, and Email in Git">Changing Committer, Author, and Email in Git</a></li>
+</ul>
+</li>
+<li>
+<i class="fas fa-plus-circle"></i><a href=/posts/programming-tutorials/>Programming Tutorials</a>
+<ul>
+<li><a href=/posts/programming-tutorials/factorial/ title=Factorial>Factorial</a></li>
+<li><a href=/posts/programming-tutorials/fibonacci-sequence/ title="Fibonacci Sequence">Fibonacci Sequence</a></li>
+</ul>
+</li>
+<li>
+<i class="fas fa-plus-circle"></i><a href=/posts/virtualbox/>Virtualbox</a>
+<ul>
+<li><a href=/posts/virtualbox/centos-7-virtualbox-5-2/ title="CentOS 7 VirtualBox 5.2 Error">CentOS 7 VirtualBox 5.2 Error</a></li>
+</ul>
+</li>
+</div>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class=content-section id=content-section>
+<div class="content container-fluid" id=content>
+<div class="container-fluid post-card-holder" id=post-card-holder>
+<div class=post-card>
+<a href=/posts/version-control/git/changing-committer-author-and-email-in-git/ class=post-card-link>
+<div class=card>
+<div class=card-head>
+<img class=card-img-top src=/posts/version-control/git/changing-committer-author-and-email-in-git/images/commit-logs.jpg alt="Hero Image">
+</div>
+<div class=card-body>
+<h5 class=card-title>Changing Committer, Author, and Email in Git</h5>
+<p class="card-text post-summary">NOTE: to be updated
+For local
+git config &ndash;global user.name &ldquo;you name&rdquo; git config &ndash;global user.email you@domain.com git commit &ndash;amend &ndash;reset-author
+Change in remote git filter-branch -f &ndash;env-filter ' GIT_AUTHOR_EMAIL=&ldquo;lyndonfiguerres@gmail.com&rdquo; GIT_COMMITTER_EMAIL=&ldquo;lyndonfiguerres@gmail.com&rdquo; ' HEAD
+git log &ndash;pretty=format:"[%h] %cd - Committer: %cn (%ce), Author: %an (%ae)"
+git update-ref -d refs/original/refs/heads/master
+rm -rf .git/refs/original
+git push &ndash;force &ndash;tags origin HEAD:master</p>
+</div>
+<div class=card-footer>
+<span class=float-left>August 10, 2021</span>
+<a href=/posts/version-control/git/changing-committer-author-and-email-in-git/ class="float-right btn btn-outline-info btn-sm">Read</a>
+</div>
+</div>
+</a>
+</div>
+<div class=post-card>
+<a href=/posts/programming-tutorials/factorial/ class=post-card-link>
+<div class=card>
+<div class=card-head>
+<img class=card-img-top src=/posts/programming-tutorials/factorial/images/pexels-pixabay-209224.jpg alt="Hero Image">
+</div>
+<div class=card-body>
+<h5 class=card-title>Factorial</h5>
+<p class="card-text post-summary">Factorial is the product of all positive integers less than or equal to a given positive integer and denoted by that integer and an exclamation point.
 n! = n * (n-1) * (n-2) * (n-3) ... 3 * 2 * 1 For example
-5! = 5 * 4 * 3 * 2 * 1 = 120 Just like the Fibonacci sequence, this is one of the basic forms of exercise used in programming and is commonly used to introduce recursion.</p></div><div class=card-footer><span class=float-left>June 1, 2021</span>
-<a href=/posts/programming-tutorials/factorial/ class="float-right btn btn-outline-info btn-sm">Read</a></div></div></a></div><div class=post-card><a href=/posts/programming-tutorials/fibonacci-sequence/ class=post-card-link><div class=card><div class=card-head><img class=card-img-top src=/posts/programming-tutorials/fibonacci-sequence/images/pexels-flash-dantz-7658151.jpg alt="Hero Image"></div><div class=card-body><h5 class=card-title>Fibonacci Sequence</h5><p class="card-text post-summary">The Fibonacci sequence is a series of numbers where a number is the addition of the last two numbers. This is one of the basic forms of exercise used in programming and is almost always present in a programming exam. Therefore, learning how to print the Fibonacci sequence is essential to anyone learning programming or a new programming language.
-0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 Typically, there are two implementations of the Fibonacci sequence - (1) the iterative algorithm and (2) the recursive algorithm.</p></div><div class=card-footer><span class=float-left>June 1, 2021</span>
-<a href=/posts/programming-tutorials/fibonacci-sequence/ class="float-right btn btn-outline-info btn-sm">Read</a></div></div></a></div><div class=post-card><a href=/posts/virtualbox/centos-7-virtualbox-5-2/ class=post-card-link><div class=card><div class=card-head><img class=card-img-top src=/images/default-hero.jpg alt="Hero Image"></div><div class=card-body><h5 class=card-title>CentOS 7 VirtualBox 5.2 Error</h5><p class="card-text post-summary">Issue A recent linux kernel update (3.10.0-693.2.2.el7.x86_64) caused the VirtualBox Guest Additions 5.2 in my CentOS7 box to break.
+5! = 5 * 4 * 3 * 2 * 1 = 120 Just like the Fibonacci sequence, this is one of the basic forms of exercise used in programming and is commonly used to introduce recursion.</p>
+</div>
+<div class=card-footer>
+<span class=float-left>June 1, 2021</span>
+<a href=/posts/programming-tutorials/factorial/ class="float-right btn btn-outline-info btn-sm">Read</a>
+</div>
+</div>
+</a>
+</div>
+<div class=post-card>
+<a href=/posts/programming-tutorials/fibonacci-sequence/ class=post-card-link>
+<div class=card>
+<div class=card-head>
+<img class=card-img-top src=/posts/programming-tutorials/fibonacci-sequence/images/pexels-flash-dantz-7658151.jpg alt="Hero Image">
+</div>
+<div class=card-body>
+<h5 class=card-title>Fibonacci Sequence</h5>
+<p class="card-text post-summary">The Fibonacci sequence is a series of numbers where a number is the addition of the last two numbers. This is one of the basic forms of exercise used in programming and is almost always present in a programming exam. Therefore, learning how to print the Fibonacci sequence is essential to anyone learning programming or a new programming language.
+0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 Typically, there are two implementations of the Fibonacci sequence - (1) the iterative algorithm and (2) the recursive algorithm.</p>
+</div>
+<div class=card-footer>
+<span class=float-left>June 1, 2021</span>
+<a href=/posts/programming-tutorials/fibonacci-sequence/ class="float-right btn btn-outline-info btn-sm">Read</a>
+</div>
+</div>
+</a>
+</div>
+<div class=post-card>
+<a href=/posts/virtualbox/centos-7-virtualbox-5-2/ class=post-card-link>
+<div class=card>
+<div class=card-head>
+<img class=card-img-top src=/images/default-hero.jpg alt="Hero Image">
+</div>
+<div class=card-body>
+<h5 class=card-title>CentOS 7 VirtualBox 5.2 Error</h5>
+<p class="card-text post-summary">Issue A recent linux kernel update (3.10.0-693.2.2.el7.x86_64) caused the VirtualBox Guest Additions 5.2 in my CentOS7 box to break.
 Error message:
 /tmp/vbox.0/hgsmi_base.c: In function ‘hgsmi_send_caps_info’: /tmp/vbox.0/hgsmi_base.c:99:2: error: implicit declaration of function ‘AssertRC’ [-Werror=implicit-function-declaration] AssertRC(p->rc);^M ^ cc1: some warnings being treated as errors make[2]: *** [/tmp/vbox.0/hgsmi_base.o] Error 1 make[1]: *** [_module_/tmp/vbox.0] Error 2 make: *** [vboxvideo] Error 2 More information is in this virtualbox thread
 virtualbox ticket
-Resolution An updated VirtualBox Guest Additions installer which contains the fix can now be downloaded from the virtualbox website.</p></div><div class=card-footer><span class=float-left>October 25, 2017</span>
-<a href=/posts/virtualbox/centos-7-virtualbox-5-2/ class="float-right btn btn-outline-info btn-sm">Read</a></div></div></a></div></div><div class=paginator></div></div></section></div><footer class="container-fluid text-center align-content-center footer pb-2"><div class="container pt-5"><div class="row text-left"><div class="col-md-4 col-sm-12"><h5>Navigation</h5><ul><li class=nav-item><a class=smooth-scroll href=/#about>About</a></li><li class=nav-item><a class=smooth-scroll href=/#skills>Skills</a></li><li class=nav-item><a class=smooth-scroll href=/#experiences>Experiences</a></li><li class=nav-item><a class=smooth-scroll href=/#projects>Projects</a></li><li class=nav-item><a class=smooth-scroll href=/#education>Education</a></li><li class=nav-item><a class=smooth-scroll href=/#recent-posts>Recent Posts</a></li></ul></div><div class="col-md-4 col-sm-12"><h5>Contact me:</h5><ul><li><span>Email:</span> <span>lyndonfiguerres@gmail.com</span></li></ul></div><div class="col-md-4 col-sm-12"><p>Stay up to date with email notification</p><form><div class=form-group><input type=email class=form-control id=exampleInputEmail1 aria-describedby=emailHelp placeholder="Enter email">
-<small id=emailHelp class="form-text text-muted">We'll never share your email with anyone else.</small></div><button type=submit class="btn btn-info">Submit</button></form></div></div></div><hr><div class=container><div class="row text-left"><div class=col-md-4><a id=theme href=https://github.com/hossainemruz/toha target=_blank rel=noopener><img src=/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_2.png alt="Toha Theme Logo">
-Toha</a></div><div class="col-md-4 text-center">© 2021 Copyright.</div><div class="col-md-4 text-right"><a id=hugo href=https://gohugo.io/ target=_blank rel=noopener>Powered by
-<img src=/images/hugo-logo.svg alt="Hugo Logo" height=18></a></div></div></div></footer><script type=text/javascript src=/js/jquery-3.4.1.min.js></script><script type=text/javascript src=/js/popper.min.js></script><script type=text/javascript src=/js/bootstrap.min.js></script><script type=text/javascript src=/js/navbar.js></script><script type=text/javascript src=/js/plyr.js></script><script type=text/javascript src=/js/main.js></script><script type=text/javascript src=/js/node_modules/darkreader/darkreader.js></script><script type=text/javascript src=/js/darkmode.js></script><script src=/js/list.js></script></body></html>
+Resolution An updated VirtualBox Guest Additions installer which contains the fix can now be downloaded from the virtualbox website.</p>
+</div>
+<div class=card-footer>
+<span class=float-left>October 25, 2017</span>
+<a href=/posts/virtualbox/centos-7-virtualbox-5-2/ class="float-right btn btn-outline-info btn-sm">Read</a>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class=paginator>
+</div>
+</div>
+</section>
+</div>
+<footer class="container-fluid text-center align-content-center footer pb-2">
+<div class="container pt-5">
+<div class="row text-left">
+<div class="col-md-4 col-sm-12">
+<h5>Navigation</h5>
+<ul>
+<li class=nav-item>
+<a class=smooth-scroll href=/#about>About</a>
+</li>
+<li class=nav-item>
+<a class=smooth-scroll href=/#skills>Skills</a>
+</li>
+<li class=nav-item>
+<a class=smooth-scroll href=/#experiences>Experiences</a>
+</li>
+<li class=nav-item>
+<a class=smooth-scroll href=/#projects>Projects</a>
+</li>
+<li class=nav-item>
+<a class=smooth-scroll href=/#education>Education</a>
+</li>
+<li class=nav-item>
+<a class=smooth-scroll href=/#recent-posts>Recent Posts</a>
+</li>
+</ul>
+</div>
+<div class="col-md-4 col-sm-12">
+<h5>Contact me:</h5>
+<ul>
+<li><span>Email: </span> <span>lyndonfiguerres@gmail.com</span></li>
+</ul>
+</div>
+<div class="col-md-4 col-sm-12">
+<p>Stay up to date with email notification</p>
+<form>
+<div class=form-group>
+<input type=email class=form-control id=exampleInputEmail1 aria-describedby=emailHelp placeholder="Enter email">
+<small id=emailHelp class="form-text text-muted">We'll never share your email with anyone else.</small>
+</div>
+<button type=submit class="btn btn-info">Submit</button>
+</form>
+</div>
+</div>
+</div>
+<hr>
+<div class=container>
+<div class="row text-left">
+<div class=col-md-4>
+<a id=theme href=https://github.com/hossainemruz/toha target=_blank rel=noopener>
+<img src=/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png alt="Toha Theme Logo">
+Toha
+</a>
+</div>
+<div class="col-md-4 text-center">© 2021 Copyright.</div>
+<div class="col-md-4 text-right">
+<a id=hugo href=https://gohugo.io/ target=_blank rel=noopener>Powered by
+<img src=/images/hugo-logo.svg alt="Hugo Logo" height=18>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<script type=text/javascript src=/js/jquery-3.4.1.min.js></script>
+<script type=text/javascript src=/js/popper.min.js></script>
+<script type=text/javascript src=/js/bootstrap.min.js></script>
+<script type=text/javascript src=/js/navbar.js></script>
+<script type=text/javascript src=/js/plyr.js></script>
+<script type=text/javascript src=/js/main.js></script>
+<script type=text/javascript src=/js/node_modules/darkreader/darkreader.js></script>
+<script type=text/javascript src=/js/darkmode.js></script>
+<script src=/js/list.js></script>
+</body>
+</html>

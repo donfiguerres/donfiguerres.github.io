@@ -461,15 +461,9 @@ data-science
 </div>
 <div class=card-body>
 <h5 class=card-title>Changing Committer, Author, and Email in Git</h5>
-<p class="card-text post-summary"> NOTE: to be updated
-For local
-git config &ndash;global user.name &ldquo;you name&rdquo; git config &ndash;global user.email you@domain.com git commit &ndash;amend &ndash;reset-author
-Change in remote git filter-branch -f &ndash;env-filter ' GIT_AUTHOR_EMAIL=&ldquo;lyndonfiguerres@gmail.com&rdquo; GIT_COMMITTER_EMAIL=&ldquo;lyndonfiguerres@gmail.com&rdquo; ' HEAD
-git log &ndash;pretty=format:"[%h] %cd - Committer: %cn (%ce), Author: %an (%ae)"
-git update-ref -d refs/original/refs/heads/master
-rm -rf .git/refs/original
-git push &ndash;force &ndash;tags origin HEAD:master
-source: https://stackoverflow.com/questions/750172/how-to-change-the-author-and-committer-name-and-e-mail-of-multiple-commits-in-gi/4903673</p>
+<p class="card-text post-summary"> I recently observered in my GitHub profile that most of my commits are not shown in my contribution activity. After doing a quick search, I found that the problem because my email in my commits do not match the email associated with my GitHub account.
+Changing Commits in the Remote Repository You need to use the filter-branch command to change the emails and names.
+git filter-branch -f --env-filter ' GIT_AUTHOR_NAME="yourname"; GIT_AUTHOR_EMAIL="youremaill@host.</p>
 </div>
 <div class=card-footer>
 <span class=float-left>August 10, 2021</span>

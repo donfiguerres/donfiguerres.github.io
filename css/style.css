@@ -1,46 +1,16 @@
-/* This is empty CSS file intended to be overwritten by user's custom CSS file */
 
-/* ============= Device specific fixes ======= */
+/*
+TODO: create a dark theme
+https://github.com/hugo-toha/toha/issues/59
 
-/* Large screens such as TV */
-@media only screen and (min-width: 1824px) {
+html {
+    filter: invert(1) hue-rotate(180deg);
+}
+html img{
+    filter: invert(1) hue-rotate(180deg);
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
-
-@media (max-width: 1400px) {
+.background.container-fluid {
+    filter: invert(1) hue-rotate(180deg);
 }
-
-@media (max-width: 1200px) {
-}
-
-/* IPad Pro */
-@media (max-width: 1024px) {
-}
-
-/*  Large devices (desktops, 992px and up) */
-
-@media (max-width: 992px) {
-}
-
-/* Medium devices (tablets, 768px and up) */
-
-@media only screen and (max-width: 768px) {
-}
-
-/* Small devices (landscape phones, 576px and up) */
-
-@media only screen and (max-width: 576px) {
-}
-
-/* iPhoneX, iPhone 6,7,8 */
-@media only screen and (max-width: 375px) {
-}
-
-/* Galaxy S5, Moto G4 */
-@media only screen and (max-width: 360px) {
-}
-
-/* iPhone 5 or before */
-@media only screen and (max-width: 320px) {
-}
+*/

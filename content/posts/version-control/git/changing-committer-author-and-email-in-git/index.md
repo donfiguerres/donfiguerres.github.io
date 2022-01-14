@@ -1,6 +1,6 @@
 ---
 title: "Changing Committer, Author, and Email in Git"
-description: "Changing the "
+description: "Changing the Committer, Author, and Email in Git"
 date: 2021-08-10T00:12:25+08:00
 hero: images/commit-logs.jpg
 menu:
@@ -10,7 +10,7 @@ menu:
     parent: git
 ---
 
-I recently observered in my GitHub profile that most of my commits are not
+I recently observed in my GitHub profile that most of my commits are not
 shown in my contribution activity. After doing a quick search, I found that the
 problem because my email in my commits do not match the email associated with
 my GitHub account.

@@ -126,12 +126,12 @@ your commits.</p>
 Delete it with this command.</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>git update-ref -d refs/original/refs/heads/master
 </code></pre></div><p>Then remove the directory.</p>
-<pre><code>rm -rf .git/refs/original
+<pre tabindex=0><code>rm -rf .git/refs/original
 </code></pre><p>After performing the steps above, you can check if the author and committer name
 and email were changed using the log command.</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>git log --pretty<span style=color:#f92672>=</span>format:<span style=color:#e6db74>&#34;[%h] %cd - Committer: %cn (%ce), Author: %an (%ae)&#34;</span>
 </code></pre></div><p>To push your changes to the remote repository.</p>
-<pre><code>git push --force --tags origin HEAD:master
+<pre tabindex=0><code>git push --force --tags origin HEAD:master
 </code></pre><p>After pushing your changes, you can now verify your commit logs in the remote
 repository. If you&rsquo;re on GitHub, the author avatar should match your GitHub
 profile picture. Your commit should also now be shown in your contributions.</p>

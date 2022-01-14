@@ -1,6 +1,14 @@
 # donfiguerres GitHub Pages
 
-This is the repo for my personal webite at GitHub Pages.
+This is the repo for my personal website at GitHub Pages.
+
+# Cloning
+
+```
+git clone https://github.com/donfiguerres/donfiguerres.github.io.git
+git submodule init
+git submodule update
+```
 
 # TODO
 * Dark mode

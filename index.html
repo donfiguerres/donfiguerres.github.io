@@ -454,6 +454,24 @@ data-science
 <div class=container>
 <div class=row id=recent-post-cards>
 <div class="col-lg-4 col-md-6 pt-2 post-card">
+<a href=/posts/version-control/git/git-connection-errors-during-cloning/ title="Git Connection Errors During Cloning" class=post-card-link>
+<div class=card>
+<div class=card-head>
+<img class=card-img-top src=/posts/version-control/git/git-connection-errors-during-cloning/images/git-error.png alt="Card image cap">
+</div>
+<div class=card-body>
+<h5 class=card-title>Git Connection Errors During Cloning</h5>
+<p class="card-text post-summary"> I got these errors recently when I was trying to clone one of our repos. Unstable network connection or network infrastructure may have caused this so as a workaround, you can clone the repo &ldquo;bit-by-bit&rdquo;.
+$ git clone ssh://git@your.host.com/yourrepo.git Cloning into 'projectdir'... ... remote: Enumerating objects: 26639, done. remote: Counting objects: 100% (269/269), done. remote: Compressing objects: 100% (152/152), done. client_loop: send disconnect: Connection reset by peer6 MiB/s fetch-pack: unexpected disconnect while reading sideband packet fatal: fetch-pack: invalid index-pack output $ git clone ssh://git@your.</p>
+</div>
+<div class=card-footer>
+<span class=float-left>January 14, 2022</span>
+<a href=/posts/version-control/git/git-connection-errors-during-cloning/ title=Read class="float-right btn btn-outline-info btn-sm">Read</a>
+</div>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 pt-2 post-card">
 <a href=/posts/version-control/git/changing-committer-author-and-email-in-git/ title="Changing Committer, Author, and Email in Git" class=post-card-link>
 <div class=card>
 <div class=card-head>
@@ -461,7 +479,7 @@ data-science
 </div>
 <div class=card-body>
 <h5 class=card-title>Changing Committer, Author, and Email in Git</h5>
-<p class="card-text post-summary"> I recently observered in my GitHub profile that most of my commits are not shown in my contribution activity. After doing a quick search, I found that the problem because my email in my commits do not match the email associated with my GitHub account.
+<p class="card-text post-summary"> I recently observed in my GitHub profile that most of my commits are not shown in my contribution activity. After doing a quick search, I found that the problem because my email in my commits do not match the email associated with my GitHub account.
 Changing Commits in the Remote Repository You need to use the filter-branch command to change the emails and names.
 git filter-branch -f --env-filter ' GIT_AUTHOR_NAME="yourname"; GIT_AUTHOR_EMAIL="youremaill@host.</p>
 </div>
@@ -487,24 +505,6 @@ n! = n * (n-1) * (n-2) * (n-3) ... 3 * 2 * 1 For example
 <div class=card-footer>
 <span class=float-left>June 1, 2021</span>
 <a href=/posts/programming-tutorials/factorial/ title=Read class="float-right btn btn-outline-info btn-sm">Read</a>
-</div>
-</div>
-</a>
-</div>
-<div class="col-lg-4 col-md-6 pt-2 post-card">
-<a href=/posts/programming-tutorials/fibonacci-sequence/ title="Fibonacci Sequence" class=post-card-link>
-<div class=card>
-<div class=card-head>
-<img class=card-img-top src=/posts/programming-tutorials/fibonacci-sequence/images/pexels-flash-dantz-7658151.jpg alt="Card image cap">
-</div>
-<div class=card-body>
-<h5 class=card-title>Fibonacci Sequence</h5>
-<p class="card-text post-summary"> The Fibonacci sequence is a series of numbers where a number is the addition of the last two numbers. This is one of the basic forms of exercise used in programming and is almost always present in a programming exam. Therefore, learning how to print the Fibonacci sequence is essential to anyone learning programming or a new programming language.
-0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 Typically, there are two implementations of the Fibonacci sequence - (1) the iterative algorithm and (2) the recursive algorithm.</p>
-</div>
-<div class=card-footer>
-<span class=float-left>June 1, 2021</span>
-<a href=/posts/programming-tutorials/fibonacci-sequence/ title=Read class="float-right btn btn-outline-info btn-sm">Read</a>
 </div>
 </div>
 </a>

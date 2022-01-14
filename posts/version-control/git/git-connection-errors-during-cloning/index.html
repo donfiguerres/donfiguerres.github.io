@@ -1,6 +1,6 @@
 <!doctype html><html>
 <head>
-<title>Factorial</title>
+<title>Git Connection Errors During Cloning</title>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta http-equiv=x-ua-compatible content="ie=edge">
@@ -14,7 +14,7 @@
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css>
 <link rel=icon type=image/png href=/images/favicon_hu8376fd15465fef26ffe66b6bcf0ca686_13669_42x0_resize_box_3.png>
 <link rel=stylesheet href=/css/style.css>
-<meta name=description content="Tutorial for calculating the factorial">
+<meta name=description content="Various errors in git like 'fatal: fetch-pack: invalid index-pack output' when cloning a big repo.">
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css>
 <link rel=stylesheet href=/css/layouts/single.css>
 <link rel=stylesheet href=/css/navigators/sidebar.css>
@@ -51,20 +51,20 @@
 <li id=list-heading><a href=/posts data-filter=all>Posts</a></li>
 <div class=subtree>
 <li>
-<i class="fas fa-minus-circle"></i><a class=active href=/posts/programming-tutorials/>Programming Tutorials</a>
-<ul class=active>
-<li><a class=active href=/posts/programming-tutorials/factorial/ title=Factorial>Factorial</a></li>
+<i class="fas fa-plus-circle"></i><a href=/posts/programming-tutorials/>Programming Tutorials</a>
+<ul>
+<li><a href=/posts/programming-tutorials/factorial/ title=Factorial>Factorial</a></li>
 <li><a href=/posts/programming-tutorials/fibonacci-sequence/ title="Fibonacci Sequence">Fibonacci Sequence</a></li>
 </ul>
 </li>
 <li>
-<i class="fas fa-plus-circle"></i><a href=/posts/version-control/>Version Control</a>
-<ul>
+<i class="fas fa-minus-circle"></i><a class=active href=/posts/version-control/>Version Control</a>
+<ul class=active>
 <li>
-<i class="fas fa-plus-circle"></i><a href=/posts/version-control/git/>Git</a>
-<ul>
+<i class="fas fa-minus-circle"></i><a class=active href=/posts/version-control/git/>Git</a>
+<ul class=active>
 <li><a href=/posts/version-control/git/changing-committer-author-and-email-in-git/ title="Changing Committer, Author, and Email in Git">Changing Committer, Author, and Email in Git</a></li>
-<li><a href=/posts/version-control/git/git-connection-errors-during-cloning/ title="Git Connection Errors During Cloning">Git Connection Errors During Cloning</a></li>
+<li><a class=active href=/posts/version-control/git/git-connection-errors-during-cloning/ title="Git Connection Errors During Cloning">Git Connection Errors During Cloning</a></li>
 </ul>
 </li>
 </ul>
@@ -84,67 +84,71 @@
 <section class=content-section id=content-section>
 <div class=content>
 <div class="container p-0 read-area">
-<div class="hero-area col-sm-12" id=hero-area style=background-image:url(https://donfiguerres.github.io/posts/programming-tutorials/factorial/images/pexels-pixabay-209224.jpg)>
+<div class="hero-area col-sm-12" id=hero-area style=background-image:url(https://donfiguerres.github.io/posts/version-control/git/git-connection-errors-during-cloning/images/git-error.png)>
 </div>
 <div class=page-content>
 <div class="author-profile ml-auto align-self-lg-center">
 <img class=rounded-circle src=/images/profile_cropped.jpg alt="Author Image">
 <h5 class=author-name>Don Figuerres</h5>
-<p>June 1, 2021</p>
+<p>January 14, 2022</p>
 </div>
 <div class=title>
-<h1>Factorial</h1>
+<h1>Git Connection Errors During Cloning</h1>
 </div>
 <div class=post-content id=post-content>
-<p>Factorial is the product of all positive integers less than or equal to a given
-positive integer and denoted by that integer and an exclamation point.</p>
-<pre tabindex=0><code>n! = n * (n-1) * (n-2) * (n-3) ... 3 * 2 * 1
-</code></pre><p>For example</p>
-<pre tabindex=0><code>5! = 5 * 4 * 3 * 2 * 1 = 120
-</code></pre><p>Just like the Fibonacci sequence, this is one of the basic forms of exercise
-used in programming and is commonly used to introduce recursion. I have written
-here both iterative and recursive implementations.</p>
-<h2 id=iterative-implementation>Iterative Implementation</h2>
-<p>Iteration is when a sequence of instructions is repeatedly executed until a
-certain condition is met.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>factorial</span>(n):
-    <span style=color:#e6db74>&#34;&#34;&#34;Return the factorial of a given number.&#34;&#34;&#34;</span>
-    <span style=color:#75715e># Take note that 0! = 1</span>
-    <span style=color:#66d9ef>if</span> n <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>:
-        <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>1</span>
-    result <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>
-    <span style=color:#66d9ef>while</span> (n <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>0</span>):
-        result <span style=color:#f92672>=</span> result <span style=color:#f92672>*</span> n
-        n <span style=color:#f92672>-=</span> <span style=color:#ae81ff>1</span>
-    <span style=color:#66d9ef>return</span> result
-
-n <span style=color:#f92672>=</span> int(input(<span style=color:#e6db74>&#34;Enter a positive integer: &#34;</span>))
-<span style=color:#66d9ef>if</span> n <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>0</span>:
-    print(<span style=color:#e6db74>&#34;Must enter a positive integer.&#34;</span>)
-    exit(<span style=color:#ae81ff>1</span>)
-print(factorial(n))
-</code></pre></div><h2 id=recursive-implementation>Recursive Implementation</h2>
-<p>Recursion is a method of solving a problem where the solution depends on
-solutions to smaller instances of the same problem. Most computer programming
-languages support recursion by allowing a function to call itself from within
-its own code.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>factorial</span>(n):
-    <span style=color:#e6db74>&#34;&#34;&#34;Return the factorial of a given number.&#34;&#34;&#34;</span>
-    <span style=color:#75715e># Take note that 0! = 1</span>
-    <span style=color:#66d9ef>if</span> n <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>:
-        <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>1</span>
-    <span style=color:#66d9ef>return</span> n <span style=color:#f92672>*</span> factorial(n <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>)
-
-n <span style=color:#f92672>=</span> int(input(<span style=color:#e6db74>&#34;Enter a positive integer: &#34;</span>))
-<span style=color:#66d9ef>if</span> n <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>0</span>:
-    print(<span style=color:#e6db74>&#34;Must enter a positive integer.&#34;</span>)
-    exit(<span style=color:#ae81ff>1</span>)
-print(factorial(n))
-</code></pre></div><p>You can see in this implementation that it is much shorter than the iterative
-implementation and it factorial function calls itself.</p>
+<p>I got these errors recently when I was trying to clone one of our repos.
+Unstable network connection or network infrastructure may have caused this so
+as a workaround, you can clone the repo &ldquo;bit-by-bit&rdquo;.</p>
+<pre tabindex=0><code>$ git clone ssh://git@your.host.com/yourrepo.git
+Cloning into 'projectdir'...
+    ...
+remote: Enumerating objects: 26639, done.
+remote: Counting objects: 100% (269/269), done.
+remote: Compressing objects: 100% (152/152), done.
+client_loop: send disconnect: Connection reset by peer6 MiB/s
+fetch-pack: unexpected disconnect while reading sideband packet
+fatal: fetch-pack: invalid index-pack output
+</code></pre><pre tabindex=0><code>$ git clone ssh://git@your.host.com/yourrepo.git
+Cloning into 'projectdir'...
+    ...
+remote: Enumerating objects: 26639, done.
+remote: Counting objects: 100% (269/269), done.
+remote: Compressing objects: 100% (152/152), done.
+client_loop: send disconnect: Connection reset by peer9 MiB/s
+fatal: early EOF
+fatal: fetch-pack: invalid index-pack outputing sideband packet
+</code></pre><h2 id=workaround>Workaround</h2>
+<p>The workaround is to checkout the repo bit-by-bit.</p>
+<h3 id=disable-compression>Disable Compression</h3>
+<p>Not sure how this exactly helps but some users in the stackoverflow reference
+claim that this actually fixed their error. No harm in trying. You will enable
+it again in the succeeding steps.</p>
+<pre tabindex=0><code>$ git config --global core.compression 0
+</code></pre><h3 id=clone-the-repo>Clone the Repo</h3>
+<p>Now, clone the repo using a depth of 1.</p>
+<pre tabindex=0><code>$ git clone --depth 1 &lt;repo_URI&gt;
+</code></pre><p>example:</p>
+<pre tabindex=0><code>$ git clone --depth 1 ssh://git@your.host.com/yourrepo.git
+</code></pre><h3 id=enable-compression>Enable Compression</h3>
+<p>Set compression back to default.</p>
+<pre tabindex=0><code>$ git config --global --unset core.compression
+</code></pre><h3 id=retrieve-the-rest-of-the-repo>Retrieve the Rest of the Repo</h3>
+<p>Try to retrieve the other commits.</p>
+<pre tabindex=0><code>$ git fetch --unshallow
+</code></pre><p>Then try to fetch all branches. Note that in the command below, it is assumed
+that the remote repository is named &lsquo;origin&rsquo;. You should change it to the name
+of your remote repository if otherwise.</p>
+<pre tabindex=0><code>$ git config remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
+$ git fetch --all
+</code></pre><p>References:</p>
+<ul>
+<li><a href=https://stackoverflow.com/questions/21277806/fatal-early-eof-fatal-index-pack-failed>https://stackoverflow.com/questions/21277806/fatal-early-eof-fatal-index-pack-failed</a></li>
+<li><a href=https://stackoverflow.com/questions/20338500/git-repository-lost-its-remote-branches>https://stackoverflow.com/questions/20338500/git-repository-lost-its-remote-branches</a></li>
+<li><a href=https://stackoverflow.com/questions/11868447/how-can-i-remove-an-entry-in-global-configuration-with-git-config>https://stackoverflow.com/questions/11868447/how-can-i-remove-an-entry-in-global-configuration-with-git-config</a></li>
+</ul>
 </div>
 <div class=btn-improve-page>
-<a href=https://github.com/donfiguerres/donfiguerres.github.io/edit/main/content/posts/programming-tutorials/factorial/index.md title="Improve this page" target=_blank rel=noopener>
+<a href=https://github.com/donfiguerres/donfiguerres.github.io/edit/main/content/posts/version-control/git/git-connection-errors-during-cloning/index.md title="Improve this page" target=_blank rel=noopener>
 <i class="fas fa-code-branch"></i>
 Improve this page
 </a>
@@ -152,15 +156,15 @@ Improve this page
 <hr>
 <div class="row next-prev-navigator">
 <div class="col-md-6 previous-article">
-<a href=/posts/version-control/git/changing-committer-author-and-email-in-git/ title="Changing Committer, Author, and Email in Git" class="btn btn-outline-info">
+<a href=/search/ title="অনুসন্ধানের ফলাফল" class="btn btn-outline-info">
 <div><i class="fas fa-chevron-circle-left"></i> Prev</div>
-<div class=next-prev-text>Changing Committer, Author, and Email in Git</div>
+<div class=next-prev-text>অনুসন্ধানের ফলাফল</div>
 </a>
 </div>
 <div class="col-md-6 next-article">
-<a href=/posts/programming-tutorials/fibonacci-sequence/ title="Fibonacci Sequence" class="btn btn-outline-info">
+<a href=/posts/version-control/git/changing-committer-author-and-email-in-git/ title="Changing Committer, Author, and Email in Git" class="btn btn-outline-info">
 <div>Next <i class="fas fa-chevron-circle-right"></i></div>
-<div class=next-prev-text>Fibonacci Sequence</div>
+<div class=next-prev-text>Changing Committer, Author, and Email in Git</div>
 </a>
 </div>
 </div>
@@ -177,8 +181,14 @@ Improve this page
 <div class=toc>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#iterative-implementation>Iterative Implementation</a></li>
-<li><a href=#recursive-implementation>Recursive Implementation</a></li>
+<li><a href=#workaround>Workaround</a>
+<ul>
+<li><a href=#disable-compression>Disable Compression</a></li>
+<li><a href=#clone-the-repo>Clone the Repo</a></li>
+<li><a href=#enable-compression>Enable Compression</a></li>
+<li><a href=#retrieve-the-rest-of-the-repo>Retrieve the Rest of the Repo</a></li>
+</ul>
+</li>
 </ul>
 </nav>
 </div>

@@ -6,16 +6,19 @@
 <meta http-equiv=x-ua-compatible content="ie=edge">
 <link rel=stylesheet href=/css/bootstrap.min.css>
 <link rel=stylesheet href=/css/layouts/main.css>
-<link rel=stylesheet href=/css/style.css>
 <link rel=stylesheet href=/css/navigators/navbar.css>
 <link rel=stylesheet href=/css/plyr.css>
 <link rel=stylesheet href=/css/flag-icon.min.css>
-<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel=stylesheet>
+<link rel=stylesheet href=/css/katex.min.css>
+<link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css>
-<link rel=icon type=image/png href=/images/favicon_hu8376fd15465fef26ffe66b6bcf0ca686_13669_42x0_resize_box_3.png>
-<link rel=stylesheet href=/css/style.css>
+<meta property="og:title" content="Posts">
+<meta property="og:description" content>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://donfiguerres.github.io/posts/">
 <link rel=stylesheet href=/css/layouts/list.css>
 <link rel=stylesheet href=/css/navigators/sidebar.css>
+<link rel=stylesheet href=/css/style.css>
 </head>
 <body data-spy=scroll data-target=#TableOfContents data-offset=80>
 <div id=themeInitialization style=display:none default-theme=" dark "></div>
@@ -26,7 +29,7 @@
 <span class=navbar-toggler-icon></span>
 </button>
 <a class=navbar-brand href=/>
-<img src=/images/main-logo_hu864bbe108f1be1ae04b57f7f2fd9d631_5637_42x0_resize_box_3.png alt=Logo>Don Figuerres</a>
+Don Figuerres</a>
 <button class="navbar-toggler navbar-light" id=toc-toggler type=button onclick=toggleTOC()>
 <span class=navbar-toggler-icon></span>
 </button>
@@ -35,8 +38,6 @@
 </ul>
 </div>
 </div>
-<img src=/images/main-logo_hu864bbe108f1be1ae04b57f7f2fd9d631_5637_42x0_resize_box_3.png class=d-none id=main-logo alt=Logo>
-<img src=/images/inverted-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_42x0_resize_box_3.png class=d-none id=inverted-logo alt="Inverted Logo">
 </nav>
 <section class=sidebar-section id=sidebar-section>
 <div class=sidebar-holder>
@@ -190,39 +191,43 @@ Resolution An updated VirtualBox Guest Additions installer which contains the fi
 <h5>Navigation</h5>
 <ul>
 <li class=nav-item>
-<a class=smooth-scroll href=/#about>About</a>
+<a class=smooth-scroll href=https://donfiguerres.github.io/#about>About</a>
 </li>
 <li class=nav-item>
-<a class=smooth-scroll href=/#skills>Skills</a>
+<a class=smooth-scroll href=https://donfiguerres.github.io/#skills>Skills</a>
 </li>
 <li class=nav-item>
-<a class=smooth-scroll href=/#experiences>Experiences</a>
+<a class=smooth-scroll href=https://donfiguerres.github.io/#experiences>Experiences</a>
 </li>
 <li class=nav-item>
-<a class=smooth-scroll href=/#projects>Projects</a>
+<a class=smooth-scroll href=https://donfiguerres.github.io/#projects>Projects</a>
 </li>
 <li class=nav-item>
-<a class=smooth-scroll href=/#education>Education</a>
+<a class=smooth-scroll href=https://donfiguerres.github.io/#education>Education</a>
 </li>
 <li class=nav-item>
-<a class=smooth-scroll href=/#recent-posts>Recent Posts</a>
+<a class=smooth-scroll href=https://donfiguerres.github.io/#recent-posts>Recent Posts</a>
 </li>
 </ul>
 </div>
 <div class="col-md-4 col-sm-12">
 <h5>Contact me:</h5>
 <ul>
-<li><span>Email: </span> <span>lyndonfiguerres@gmail.com</span></li>
+<li><a href=mailto:lyndonfiguerres@gmail.com target=_blank rel=noopener>
+<span><i class="fas fa-envelope"></i></span> <span>lyndonfiguerres@gmail.com</span>
+</a></li>
 </ul>
 </div>
 <div class="col-md-4 col-sm-12">
 <p>Stay up to date with email notification</p>
-<form>
+<form method=post action=https://blogtrottr.com>
 <div class=form-group>
-<input type=email class=form-control id=exampleInputEmail1 aria-describedby=emailHelp placeholder="Enter email">
-<small id=emailHelp class="form-text text-muted">We'll never share your email with anyone else.</small>
+<input type=email class=form-control name=btr_email placeholder="Enter email"><br>
+<input type=hidden name=btr_url value=https://donfiguerres.github.io/index.xml>
+<input type=hidden name=schedule_type value=1>
+<small id=emailHelp class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
+<button type=submit class="btn btn-info"> Submit </button>
 </div>
-<button type=submit class="btn btn-info">Submit</button>
 </form>
 </div>
 </div>
@@ -251,6 +256,8 @@ Toha
 <script type=text/javascript src=/js/navbar.js></script>
 <script type=text/javascript src=/js/plyr.js></script>
 <script type=text/javascript src=/js/main.js></script>
+<script type=text/javascript defer src=/js/katex.min.js></script>
+<script type=text/javascript defer src=/js/auto-render.min.js onload=renderMathInElement(document.body)></script>
 <script type=text/javascript src=https://cdn.jsdelivr.net/npm/darkreader@4.9.34/darkreader.js></script>
 <script type=text/javascript src=/js/darkmode.js></script>
 <script src=/js/list.js></script>

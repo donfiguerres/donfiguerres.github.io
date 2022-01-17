@@ -8,14 +8,17 @@
 <meta http-equiv=x-ua-compatible content="ie=edge">
 <link rel=stylesheet href=/css/bootstrap.min.css>
 <link rel=stylesheet href=/css/layouts/main.css>
-<link rel=stylesheet href=/css/style.css>
 <link rel=stylesheet href=/css/navigators/navbar.css>
 <link rel=stylesheet href=/css/plyr.css>
 <link rel=stylesheet href=/css/flag-icon.min.css>
-<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel=stylesheet>
+<link rel=stylesheet href=/css/katex.min.css>
+<link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css>
-<link rel=icon type=image/png href=/images/favicon_hu8376fd15465fef26ffe66b6bcf0ca686_13669_42x0_resize_box_3.png>
-<link rel=stylesheet href=/css/style.css>
+<meta property="og:title" content="Don Figuerres">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Portfolio and personal blog of Don Figuerres.">
+<meta property="og:image" content="https://donfiguerres.github.io/images/profile_cropped.jpg">
+<meta property="og:url" content="https://donfiguerres.github.io/">
 <link rel=stylesheet href=/css/sections/home.css>
 <link rel=stylesheet href=/css/sections/about.css>
 <link rel=stylesheet href=/css/sections/skills.css>
@@ -25,13 +28,14 @@
 <link rel=stylesheet href=/css/sections/recent-posts.css>
 <link rel=stylesheet href=/css/sections/achievements.css>
 <link rel=stylesheet href=/css/sections/accomplishments.css>
+<link rel=stylesheet href=/css/style.css>
 </head>
 <body data-spy=scroll data-target=#top-navbar data-offset=100>
 <div id=themeInitialization style=display:none default-theme=" dark "></div>
 <nav class="navbar navbar-expand-xl top-navbar initial-navbar" id=top-navbar>
 <div class=container>
 <a class=navbar-brand href=/>
-<img src=/images/inverted-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_42x0_resize_box_3.png id=logo alt=Logo>Don Figuerres</a>
+Don Figuerres</a>
 <button class="navbar-toggler navbar-dark" id=navbar-toggler type=button data-toggle=collapse data-target=#top-nav-items aria-label=menu>
 <span class=navbar-toggler-icon></span>
 </button>
@@ -51,9 +55,6 @@
 </li>
 <li class=nav-item>
 <a class=nav-link href=#projects>Projects</a>
-</li>
-<li class=nav-item>
-<a class=nav-link href=#education>Education</a>
 </li>
 <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href=# id=navbarDropdown role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false>More</a>
@@ -75,8 +76,6 @@
 </ul>
 </div>
 </div>
-<img src=/images/main-logo_hu864bbe108f1be1ae04b57f7f2fd9d631_5637_42x0_resize_box_3.png class=d-none id=main-logo alt=Logo>
-<img src=/images/inverted-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_42x0_resize_box_3.png class=d-none id=inverted-logo alt="Inverted Logo">
 </nav>
 <div class="container-fluid home" id=home>
 <style>#homePageBackgroundImageDivStyled{background-image:url(https://donfiguerres.github.io/images/sunset20200425_hu0345267d2b70519d44129d6bc0ea77b5_4299849_500x0_resize_q75_box.jpg)}@media(min-width:500px) and (max-width:800px){#homePageBackgroundImageDivStyled{background-image:url(https://donfiguerres.github.io/images/sunset20200425_hu0345267d2b70519d44129d6bc0ea77b5_4299849_800x0_resize_q75_box.jpg)}}@media(min-width:801px) and (max-width:1200px){#homePageBackgroundImageDivStyled{background-image:url(https://donfiguerres.github.io/images/sunset20200425_hu0345267d2b70519d44129d6bc0ea77b5_4299849_1200x0_resize_q75_box.jpg)}}@media(min-width:1201px) and (max-width:1500px){#homePageBackgroundImageDivStyled{background-image:url(https://donfiguerres.github.io/images/sunset20200425_hu0345267d2b70519d44129d6bc0ea77b5_4299849_1500x0_resize_q75_box.jpg)}}@media(min-width:1501px){#homePageBackgroundImageDivStyled{background-image:url(https://donfiguerres.github.io/images/sunset20200425.jpg)}}</style>
@@ -165,15 +164,16 @@ I am a software engineer with 9 years of working experience. My experience is pr
 </div>
 </div>
 <div class="container-fluid section-holder d-flex bg-dimmed">
-<div class="container-fluid anchor pb-5 skills-section" id=skills>
-<h1 class=text-center>Skills</h1>
+<div class="container-fluid anchor pb-5 skills-section">
+<h1 class=text-center>
+<span id=skills></span>Skills</h1>
 <div class="container d-flex-block">
 <div class=row id=primary-skills>
 <div class="col-xs-12 col-sm-6 col-lg-4 pt-2">
 <a class=skill-card-link href=https://www.python.org title=Python target=_blank rel=noopener>
 <div class=card>
 <div class="card-head d-flex">
-<img class=card-img-xs src=/images/logo/python-logo-notext.png alt=Python>
+<img class=card-img-xs src=/images/logo/python-logo-notext_hu25ea41e085c866858d36cba29ccce198_35203_24x24_fit_box_3.png alt=Python>
 <h5 class=card-title>Python</h5>
 </div>
 <div class=card-body>
@@ -186,7 +186,7 @@ I am a software engineer with 9 years of working experience. My experience is pr
 <a class=skill-card-link href=https://en.cppreference.com/ title=C target=_blank rel=noopener>
 <div class=card>
 <div class="card-head d-flex">
-<img class=card-img-xs src=/images/logo/c_logo.png alt=C>
+<img class=card-img-xs src=/images/logo/c_logo_hu04e9ef6cd4e0725a8728d70cbfe05179_67876_24x24_fit_box_3.png alt=C>
 <h5 class=card-title>C</h5>
 </div>
 <div class=card-body>
@@ -199,7 +199,7 @@ I am a software engineer with 9 years of working experience. My experience is pr
 <a class=skill-card-link href=https://isocpp.org title=C++ target=_blank rel=noopener>
 <div class=card>
 <div class="card-head d-flex">
-<img class=card-img-xs src=/images/logo/cpp_logo.png alt=C++>
+<img class=card-img-xs src=/images/logo/cpp_logo_hu6f0363d7604bb9603026fe4596062b91_23613_24x24_fit_box_3.png alt=C++>
 <h5 class=card-title>C++</h5>
 </div>
 <div class=card-body>
@@ -212,7 +212,7 @@ I am a software engineer with 9 years of working experience. My experience is pr
 <a class=skill-card-link href=https://www.java.com title=Java target=_blank rel=noopener>
 <div class=card>
 <div class="card-head d-flex">
-<img class=card-img-xs src=/images/logo/java-logo.png alt=Java>
+<img class=card-img-xs src=/images/logo/java-logo_hu16ae6e4b75217db19b91f4998d40a930_63103_24x24_fit_box_3.png alt=Java>
 <h5 class=card-title>Java</h5>
 </div>
 <div class=card-body>
@@ -225,7 +225,7 @@ I am a software engineer with 9 years of working experience. My experience is pr
 <a class=skill-card-link href=https://www.linux.org title=Linux target=_blank rel=noopener>
 <div class=card>
 <div class="card-head d-flex">
-<img class=card-img-xs src=/images/logo/linux-tux.png alt=Linux>
+<img class=card-img-xs src=/images/logo/linux-tux_hua8efe119a2e274070488c05bfea5360a_241976_24x24_fit_box_3.png alt=Linux>
 <h5 class=card-title>Linux</h5>
 </div>
 <div class=card-body>
@@ -238,7 +238,7 @@ I am a software engineer with 9 years of working experience. My experience is pr
 <a class=skill-card-link href=https://www.microsoft.com/en-us/windows title=Windows target=_blank rel=noopener>
 <div class=card>
 <div class="card-head d-flex">
-<img class=card-img-xs src=/images/logo/windows-logo.png alt=Windows>
+<img class=card-img-xs src=/images/logo/windows-logo_hu2cbe6dea8e4a3af8e16243865b9024b3_36422_24x24_fit_box_3.png alt=Windows>
 <h5 class=card-title>Windows</h5>
 </div>
 <div class=card-body>
@@ -264,8 +264,10 @@ I am a software engineer with 9 years of working experience. My experience is pr
 </div>
 </div>
 <div class="container-fluid section-holder d-flex bg-white">
-<div class="container-fluid anchor pb-5 experiences-section" id=experiences>
-<h1 class=text-center>Experiences</h1>
+<div class="container-fluid anchor pb-5 experiences-section">
+<h1 class=text-center>
+<span id=experiences></span>Experiences
+</h1>
 <div class="container timeline text-justify">
 <div class="row align-items-center d-flex">
 <div class="col-1 col-lg-2 text-center vertical-line d-inline-flex justify-content-center">
@@ -416,8 +418,9 @@ data-science
 </div>
 </div>
 <div class="container-fluid section-holder d-flex bg-white">
-<div class="container-fluid anchor pb-5 education-section" id=education>
-<h1 class=text-center>Education</h1>
+<div class="container-fluid anchor pb-5 education-section">
+<h1 class=text-center>
+<span id=education></span>Education</h1>
 <div class=container>
 <table class=education-info-table>
 <tbody>
@@ -449,8 +452,9 @@ data-science
 </div>
 </div>
 <div class="container-fluid section-holder d-flex bg-dimmed">
-<div class="container-fluid anchor pb-5 recent-posts-section" id=recent-posts>
-<h1 class=text-center>Recent Posts</h1>
+<div class="container-fluid anchor pb-5 recent-posts-section">
+<h1 class=text-center>
+<span id=recent-posts></span>Recent Posts</h1>
 <div class=container>
 <div class=row id=recent-post-cards>
 <div class="col-lg-4 col-md-6 pt-2 post-card">
@@ -520,39 +524,43 @@ n! = n * (n-1) * (n-2) * (n-3) ... 3 * 2 * 1 For example
 <h5>Navigation</h5>
 <ul>
 <li class=nav-item>
-<a class=smooth-scroll href=/#about>About</a>
+<a class=smooth-scroll href=https://donfiguerres.github.io/#about>About</a>
 </li>
 <li class=nav-item>
-<a class=smooth-scroll href=/#skills>Skills</a>
+<a class=smooth-scroll href=https://donfiguerres.github.io/#skills>Skills</a>
 </li>
 <li class=nav-item>
-<a class=smooth-scroll href=/#experiences>Experiences</a>
+<a class=smooth-scroll href=https://donfiguerres.github.io/#experiences>Experiences</a>
 </li>
 <li class=nav-item>
-<a class=smooth-scroll href=/#projects>Projects</a>
+<a class=smooth-scroll href=https://donfiguerres.github.io/#projects>Projects</a>
 </li>
 <li class=nav-item>
-<a class=smooth-scroll href=/#education>Education</a>
+<a class=smooth-scroll href=https://donfiguerres.github.io/#education>Education</a>
 </li>
 <li class=nav-item>
-<a class=smooth-scroll href=/#recent-posts>Recent Posts</a>
+<a class=smooth-scroll href=https://donfiguerres.github.io/#recent-posts>Recent Posts</a>
 </li>
 </ul>
 </div>
 <div class="col-md-4 col-sm-12">
 <h5>Contact me:</h5>
 <ul>
-<li><span>Email: </span> <span>lyndonfiguerres@gmail.com</span></li>
+<li><a href=mailto:lyndonfiguerres@gmail.com target=_blank rel=noopener>
+<span><i class="fas fa-envelope"></i></span> <span>lyndonfiguerres@gmail.com</span>
+</a></li>
 </ul>
 </div>
 <div class="col-md-4 col-sm-12">
 <p>Stay up to date with email notification</p>
-<form>
+<form method=post action=https://blogtrottr.com>
 <div class=form-group>
-<input type=email class=form-control id=exampleInputEmail1 aria-describedby=emailHelp placeholder="Enter email">
-<small id=emailHelp class="form-text text-muted">We'll never share your email with anyone else.</small>
+<input type=email class=form-control name=btr_email placeholder="Enter email"><br>
+<input type=hidden name=btr_url value=https://donfiguerres.github.io/index.xml>
+<input type=hidden name=schedule_type value=1>
+<small id=emailHelp class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
+<button type=submit class="btn btn-info"> Submit </button>
 </div>
-<button type=submit class="btn btn-info">Submit</button>
 </form>
 </div>
 </div>
@@ -581,6 +589,8 @@ Toha
 <script type=text/javascript src=/js/navbar.js></script>
 <script type=text/javascript src=/js/plyr.js></script>
 <script type=text/javascript src=/js/main.js></script>
+<script type=text/javascript defer src=/js/katex.min.js></script>
+<script type=text/javascript defer src=/js/auto-render.min.js onload=renderMathInElement(document.body)></script>
 <script type=text/javascript src=https://cdn.jsdelivr.net/npm/darkreader@4.9.34/darkreader.js></script>
 <script type=text/javascript src=/js/darkmode.js></script>
 <script src=/js/itype.min.js></script>

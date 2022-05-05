@@ -18,10 +18,9 @@ designation: Software Engineer
 #resume: "files/resume.pdf"
 
 # a summary about you
-summary: "I am a software engineer with 9 years of working experience.
-My experience is pretty diverse - from automated electrical tests to embedded
-programming to Windows desktop GUI to enterprise applications deployed to the
-cloud."
+summary: "I am a software engineer with 10 years of working experience - ranging
+from automated electrical tests to embedded programming to Windows desktop GUI
+to enterprise applications deployed to the cloud."
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -48,9 +47,9 @@ softSkills:
 - name: Project Lead
   percentage: 80
   color: blue
-- name: Agile
+- name: Agile Development
   percentage: 80
   color: yellow
-- name: Fast Learner
+- name: Backend Development
   percentage: 95
   color: orange

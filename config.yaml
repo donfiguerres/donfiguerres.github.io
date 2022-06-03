@@ -55,6 +55,7 @@ params:
 
   # Dark theme toggle
   darkTheme:
+    provider: darkreader
     enable: true
     default: dark
 

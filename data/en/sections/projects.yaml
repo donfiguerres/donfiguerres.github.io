@@ -30,3 +30,9 @@ projects:
   summary: COVID-19 Tracker for the Philippines
   tags: ["hobby", "python", "covid-19", "data-science"]
 
+- name: Toha
+  role: Contributor
+  timeline: "Aug 2021 - Present"
+  repo: "https://github.com/hugo-toha/toha"
+  summary: Toha - A Hugo theme for personal portfolio
+  tags: ["hobby", "hugo"]

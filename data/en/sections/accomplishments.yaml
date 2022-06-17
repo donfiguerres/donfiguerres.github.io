@@ -1,0 +1,37 @@
+# section information
+section:
+  name: Accomplishments
+  id: accomplishments
+  enable: true
+  weight: 5
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your accomplishments
+accomplishments:
+- name: Python Certification
+  timeline: "June 2022"
+  organization:
+    name: HackerRank
+    url: https://www.hackerrank.com
+  courseOverview: "Assessment of skills in using the Python programming language.
+  It covers topics like Scalar Types, Operators and Control Flow, Strings,
+  Collections and Iteration, Modularity, Objects and Types and Classes"
+  certificateURL: "https://www.hackerrank.com/certificates/2a732826a857"
+- name: SQL Certification
+  timeline: "June 2022"
+  organization:
+    name: HackerRank
+    url: https://www.hackerrank.com
+  courseOverview: "Assessment of skills in using the SQL. It includes simple
+  queries, relationships, and aggregators."
+  certificateURL: "https://www.hackerrank.com/certificates/035736fad11c"
+- name: Licensed Electronics Engineer
+  timeline: "November 2011"
+  organization:
+    name: Professional Regulations Commission
+    url: https://www.prc.gov.ph/electronics-engineering
+  courseOverview: "Licensure examinations for Electronics Engineers in the
+  Philippines"
+  certificateURL: "https://www.prc.gov.ph/uploaded/documents/ELECTRONICSENGRS1011.pdf"

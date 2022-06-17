@@ -18,9 +18,12 @@ designation: Software Engineer
 #resume: "files/resume.pdf"
 
 # a summary about you
-summary: "I am a software engineer with 10 years of working experience - ranging
-from automated electrical tests to embedded programming to Windows desktop GUI
-to enterprise applications deployed to the cloud."
+summary: "Welcome to my domain! I am a software engineer with 10 years of
+  working experience which includes enterprise web applications deployed to the
+  cloud, monitoring dashboards, embedded and IC product development tools,
+  compiler and assembler, monitoring dashboards and automated electrical tests.
+  I'm passionate about building and improving systems and I'm also eager to
+  learn about new technologies."
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -28,7 +31,7 @@ socialLinks:
 - name: Github
   icon: "fab fa-github"
   url: "https://github.com/donfiguerres/"
-- name: Github
+- name: Stackoverflow
   icon: "fab fa-stack-overflow"
   url: "https://stackoverflow.com/users/4097451/donfiguerres"
 - name: LinkedIn
@@ -37,7 +40,9 @@ socialLinks:
 - name: Instagram
   icon: "fab fa-instagram"
   url: "https://www.instagram.com/donfiggy/"
-
+- name: HackerRank
+  icon: "fab fa-hackerrank"
+  url: "https://www.hackerrank.com/lyndonfiguerres"
 
 
 # your soft skills
@@ -53,3 +58,6 @@ softSkills:
 - name: Backend Development
   percentage: 95
   color: orange
+- name: Frontend Development
+  percentage: 50
+  color: green

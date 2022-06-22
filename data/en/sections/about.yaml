@@ -48,16 +48,23 @@ socialLinks:
 # your soft skills
 # give the percentage between 50 to 100 with 5 intervals.
 # currently supported colors: blue, yellow, pink, green, sky, orange
-softSkills:
-- name: Project Lead
+# Show your badges
+# You can show your verifiable certificates from https://www.credly.com.
+# You can also show a circular bar indicating the level of expertise on a certain skill
+badges:
+- type: soft-skill-indicator
+  name: Project Lead
   percentage: 80
   color: blue
-- name: Agile Development
+- type: soft-skill-indicator
+  name: Agile Development
   percentage: 80
   color: yellow
-- name: Backend Development
+- type: soft-skill-indicator
+  name: Backend Development
   percentage: 95
   color: orange
-- name: Frontend Development
+- type: soft-skill-indicator
+  name: Frontend Development
   percentage: 50
   color: green

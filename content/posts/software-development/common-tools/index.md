@@ -1,7 +1,7 @@
 ---
 title: "Common Tools for Software Development"
 description: "Common Tools for Software Development"
-date: 2022-06-23T18:05:00+08:00
+date: 2022-06-23T23:34:00+08:00
 hero: images/pexels-nemuel-sereti-6424586.jpg
 menu:
   sidebar:

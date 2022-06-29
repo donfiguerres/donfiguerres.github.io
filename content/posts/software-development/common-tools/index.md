@@ -15,11 +15,13 @@ find useful too. I use this list when setting up a new VM or workstation.
 
 ## Browser
 - [Google Chrome](https://www.google.com/chrome)
-  - It's most people's default browser although Edge has a better performance in Windows.
+  - It's most people's default browser although Edge has a better performance in
+  Windows.
 - [Brave Browser](https://brave.com)
   - I use this personally for browsing.
   - It has a lot of default privacy features.
-  - Can be used to test if a website will continue to function if all the security and privacy features are enabled.
+  - Can be used to test if a website will continue to function if all the
+  security and privacy features are enabled.
 
 ## Editor
 - [VSCode](https://code.visualstudio.com)
@@ -43,7 +45,8 @@ find useful too. I use this list when setting up a new VM or workstation.
 - [Intellij](https://www.jetbrains.com/idea)
   - Probably the best IDE for Java development.
 - [Eclipse](https://www.eclipse.org)
-  - Not the best IDE but I'm keeping it here since there are limitations in the community edition of Intellij.
+  - Not the best IDE but I'm keeping it here since there are limitations in the
+  community edition of Intellij.
 
 ## File Explorer
 - [Multi Commander](http://multicommander.com)
@@ -70,7 +73,8 @@ find useful too. I use this list when setting up a new VM or workstation.
 
 ## Remote Desktop
 - [mRemoteNG](https://mremoteng.org)
-  - Remote desktop connection manager where you can connect to multiple remote desktops and the connections are arranged via tabs.
+ - Remote desktop connection manager where you can connect to multiple remote
+  desktops and the connections are arranged via tabs.
 - [VcXsrv](https://sourceforge.net/projects/vcxsrv)
   - X11 Window server
   - More actively developed than Xming.
@@ -95,4 +99,5 @@ find useful too. I use this list when setting up a new VM or workstation.
 
 ## IBM
 - [IBM i Access - Client Solutions](https://www.ibm.com/support/pages/ibm-i-access-client-solutions)
-  - 5250 terminal (green screen) emulator is handy when connecting to IBM i machines.
+  - 5250 terminal (green screen) emulator is handy when connecting to IBM i
+  machines.

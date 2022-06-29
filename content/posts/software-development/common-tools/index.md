@@ -88,6 +88,8 @@ find useful too. I use this list when setting up a new VM or workstation.
 ## Version Control
 - [Git](https://git-scm.com)
   - Need I say more? Even this website version controlled with Git.
+  - Follow [this guide](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-git)
+  for setting up in WSL especially for credential management.
 
 ## LDAP Browser
 - [JXplorer](http://jxplorer.org)

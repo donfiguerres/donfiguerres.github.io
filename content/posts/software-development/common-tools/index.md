@@ -82,6 +82,8 @@ find useful too. I use this list when setting up a new VM or workstation.
 ## Virtualization
 - [VirtualBox](www.virtualbox.org)
   - For hosting virtual machines
+- [Docker](https://www.docker.com)
+  - Modern day containerization.
 
 ## Version Control
 - [Git](https://git-scm.com)

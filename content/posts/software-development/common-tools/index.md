@@ -50,6 +50,17 @@ find useful too. I use this list when setting up a new VM or workstation.
   - Far Manager alternative.
   - Useful when opening a lot of directories simultaneously.
 
+## Process Manager and Monitoring
+- [Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer)
+  - A superuser alternative to Task Manager.
+- [Process Hacker](https://processhacker.sourceforge.io/)
+  - A much more modern alternative to Process Explorer.
+  - Note: This tool has been flagged recently as malware by antivirus softwares
+  because malicious actors have used it in some attacks.
+- [htop](https://htop.dev/)
+  - A great process manager for Linux.
+  - A modern alternative to top.
+
 ## Terminal Emulator
 - [PuTTY](https://www.putty.org)
   - Remote connection to *nix and IBM i machines.

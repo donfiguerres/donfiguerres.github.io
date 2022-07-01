@@ -26,10 +26,17 @@ Usually during boot, the instructions to enter the BIOS setup is displayed
 on the screen. This is usually done by pressing either F1 or Enter keys during
 boot.
 
+![boot screen](images/boot-screen.jpg)
+
 ### Through Windows 10 Settings
 
-Go to Windows 10 Settings and search for Recovery. Click on the `Restart now`
-button under `Advanced startup`.
+Go to Windows 10 Settings and search for Recovery.
+
+![recovery search](images/recovery-search.png)
+
+Click on the `Restart now` button under `Advanced startup`.
+
+![restart now](images/restart.png)
 
 
 ### BIOS 

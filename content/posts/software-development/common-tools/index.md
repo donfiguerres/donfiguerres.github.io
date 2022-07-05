@@ -38,7 +38,6 @@ find useful too. I use this list when setting up a new VM or workstation.
     - GitLense by GitKraken
     - Git History by Don Jayamanne
     - Remote - SSH and Remote - WSL by Microsoft
-    - Markdown All in One by Yu Zhang
 - [Notepad++](https://notepad-plus-plus.org)
   - Handy windows notepad editor.
 

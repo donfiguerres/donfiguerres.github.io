@@ -11,24 +11,20 @@ menu:
 ---
 
 Factorial is the product of all positive integers less than or equal to a given
-positive integer and denoted by that integer and an exclamation point. 
+positive integer and denoted by that integer and an exclamation point.
 
-```
-n! = n * (n-1) * (n-2) * (n-3) ... 3 * 2 * 1
-```
+`n! = n * (n-1) * (n-2) * (n-3) ... 3 * 2 * 1`
 
 For example
 
-```
-5! = 5 * 4 * 3 * 2 * 1 = 120
-```
+`5! = 5 * 4 * 3 * 2 * 1 = 120`
 
-Just like the Fibonacci sequence, this is one of the basic forms of exercise 
-used in programming and is commonly used to introduce recursion. I have written 
-here both iterative and recursive implementations. 
-
+Just like the Fibonacci sequence, this is one of the basic forms of exercise
+used in programming and is commonly used to introduce recursion. I have written
+here both iterative and recursive implementations.
 
 ## Iterative Implementation
+
 Iteration is when a sequence of instructions is repeatedly executed until a
 certain condition is met.
 
@@ -52,9 +48,10 @@ print(factorial(n))
 ```
 
 ## Recursive Implementation
+
 Recursion is a method of solving a problem where the solution depends on
-solutions to smaller instances of the same problem. Most computer programming 
-languages support recursion by allowing a function to call itself from within 
+solutions to smaller instances of the same problem. Most computer programming
+languages support recursion by allowing a function to call itself from within
 its own code.
 
 ```python

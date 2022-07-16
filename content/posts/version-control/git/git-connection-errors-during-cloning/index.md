@@ -38,45 +38,48 @@ fatal: early EOF
 fatal: fetch-pack: invalid index-pack outputing sideband packet
 ```
 
-
 ## Workaround
+
 The workaround is to checkout the repo bit-by-bit.
 
 ### Disable Compression
+
 Not sure how this exactly helps but some users in the stackoverflow reference
 claim that this actually fixed their error. No harm in trying. You will enable
 it again in the succeeding steps.
 
 ```sh
-$ git config --global core.compression 0
+git config --global core.compression 0
 ```
 
 ### Clone the Repo
+
 Now, clone the repo using a depth of 1.
 
 ```sh
-$ git clone --depth 1 <repo_URI>
+git clone --depth 1 <repo_URI>
 ```
 
 example:
 
 ```sh
-$ git clone --depth 1 ssh://git@your.host.com/yourrepo.git
+git clone --depth 1 ssh://git@your.host.com/yourrepo.git
 ```
 
 ### Enable Compression
+
 Set compression back to default.
 
 ```sh
-$ git config --global --unset core.compression
+git config --global --unset core.compression
 ```
 
-
 ### Retrieve the Rest of the Repo
+
 Try to retrieve the other commits.
 
 ```sh
-$ git fetch --unshallow
+git fetch --unshallow
 ```
 
 Then try to fetch all branches. Note that in the command below, it is assumed
@@ -84,11 +87,12 @@ that the remote repository is named 'origin'. You should change it to the name
 of your remote repository if otherwise.
 
 ```sh
-$ git config remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
-$ git fetch --all
+git config remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
+git fetch --all
 ```
 
 References:
-- https://stackoverflow.com/questions/21277806/fatal-early-eof-fatal-index-pack-failed
-- https://stackoverflow.com/questions/20338500/git-repository-lost-its-remote-branches
-- https://stackoverflow.com/questions/11868447/how-can-i-remove-an-entry-in-global-configuration-with-git-config
+
+- <https://stackoverflow.com/questions/21277806/fatal-early-eof-fatal-index-pack-failed>
+- <https://stackoverflow.com/questions/20338500/git-repository-lost-its-remote-branches>
+- <https://stackoverflow.com/questions/11868447/how-can-i-remove-an-entry-in-global-configuration-with-git-config>

@@ -14,6 +14,7 @@ List of tools that I've used throughout my development career that you might
 find useful too. I use this list when setting up a new VM or workstation.
 
 ## Browser
+
 - [Google Chrome](https://www.google.com/chrome)
   - It's most people's default browser although Edge has a better performance in
   Windows.
@@ -24,6 +25,7 @@ find useful too. I use this list when setting up a new VM or workstation.
   security and privacy features are enabled.
 
 ## Editor
+
 - [VSCode](https://code.visualstudio.com)
   - Basically an editor on steroids.
   - Can function as an IDE through extensions.
@@ -42,6 +44,7 @@ find useful too. I use this list when setting up a new VM or workstation.
   - Handy windows notepad editor.
 
 ## IDE
+
 - [Intellij](https://www.jetbrains.com/idea)
   - Probably the best IDE for Java development.
 - [Eclipse](https://www.eclipse.org)
@@ -49,11 +52,13 @@ find useful too. I use this list when setting up a new VM or workstation.
   community edition of Intellij.
 
 ## File Explorer
+
 - [Multi Commander](http://multicommander.com)
   - Far Manager alternative.
   - Useful when opening a lot of directories simultaneously.
 
 ## Process Manager and Monitoring
+
 - [Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer)
   - A superuser alternative to Task Manager.
 - [Process Hacker](https://processhacker.sourceforge.io/)
@@ -65,6 +70,7 @@ find useful too. I use this list when setting up a new VM or workstation.
   - A modern alternative to top.
 
 ## Terminal Emulator
+
 - [PuTTY](https://www.putty.org)
   - Remote connection to *nix and IBM i machines.
   - WSL can basically replace this tool but I'm keeping it here just in case.
@@ -72,36 +78,42 @@ find useful too. I use this list when setting up a new VM or workstation.
   - File explorer to a remote machine.
 
 ## Remote Desktop
+
 - [mRemoteNG](https://mremoteng.org)
- - Remote desktop connection manager where you can connect to multiple remote
+- Remote desktop connection manager where you can connect to multiple remote
   desktops and the connections are arranged via tabs.
 - [VcXsrv](https://sourceforge.net/projects/vcxsrv)
   - X11 Window server
   - More actively developed than Xming.
 
 ## Virtualization
+
 - [VirtualBox](www.virtualbox.org)
   - For hosting virtual machines
 - [Docker](https://www.docker.com)
   - Modern day containerization.
 
 ## Version Control
+
 - [Git](https://git-scm.com)
   - Need I say more? Even this website version controlled with Git.
   - Follow [this guide](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-git)
   for setting up in WSL especially for credential management.
 
 ## LDAP Browser
+
 - [JXplorer](http://jxplorer.org)
   - Free LDAP Browser
 
 ## Database
+
 - [SQL Developer](https://www.oracle.com/database/technologies/appdev/sqldeveloper-landing.html)
   - No longer bundled with Oracle database starting from version 19.
 - [IBM Data Studio](https://www.ibm.com/ph-en/products/ibm-data-studio)
   - DB2 development studio
 
 ## IBM
+
 - [IBM i Access - Client Solutions](https://www.ibm.com/support/pages/ibm-i-access-client-solutions)
   - 5250 terminal (green screen) emulator is handy when connecting to IBM i
   machines.

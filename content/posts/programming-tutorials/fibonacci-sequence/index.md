@@ -12,27 +12,25 @@ menu:
 
 The Fibonacci sequence is a series of numbers where a number is the addition
 of the last two numbers. This is one of the basic forms of exercise used in
-programming and is almost always present in a programming exam. Therefore, 
-learning how to print the Fibonacci sequence is essential to anyone learning 
+programming and is almost always present in a programming exam. Therefore,
+learning how to print the Fibonacci sequence is essential to anyone learning
 programming or a new programming language.
 
-```
-0 1 1 2 3 5 8 13 21 34 55 89 144 233 377
-```
+`0 1 1 2 3 5 8 13 21 34 55 89 144 233 377`
 
 Typically, there are two implementations of the Fibonacci sequence - (1) the
-iterative algorithm and (2) the recursive algorithm. 
+iterative algorithm and (2) the recursive algorithm.
 
-I have written here both iterative and recursive implementations. For each 
-implementation, I've also written both the ascending order and the descending 
+I have written here both iterative and recursive implementations. For each
+implementation, I've also written both the ascending order and the descending
 (reverse) order implementations.
 
-
 ## Iterative Implementation
+
 Iteration is when a sequence of instructions is repeatedly executed until a
 certain condition is met.
 
-### Ascending Order
+### Ascending Order - Iterative
 
 ```python
 def fibonacci(terms):
@@ -58,7 +56,7 @@ for num in fibonacci(terms):
 print("")
 ```
 
-### Descending Order
+### Descending Order - Iterative
 
 ```python
 def fibonacci(terms):
@@ -87,12 +85,14 @@ print("")
 ```
 
 ## Recursive Implementation
+
 Recursion is a method of solving a problem where the solution depends on
-solutions to smaller instances of the same problem. Most computer programming 
-languages support recursion by allowing a function to call itself from within 
+solutions to smaller instances of the same problem. Most computer programming
+languages support recursion by allowing a function to call itself from within
 its own code.
 
-### Ascending Order
+### Ascending Order - Recursive
+
 This is the common recursive implementation of printing a Fibonacci sequence.
 However, if you look closely, we're still using a for loop in the driver code.
 The actual recursive implementation here is the fibonacci() function which
@@ -113,8 +113,7 @@ for n in range(terms):
 print("")
 ```
 
-
-### Descending Order
+### Descending Order - Recursive
 
 ```python
 def fibonacci(n):

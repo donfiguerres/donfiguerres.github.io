@@ -47,6 +47,7 @@ Follow the commands below to set-up your global gitignore file.
 `.gitignore` in the user's home directory the examples below to make it
 consistent with typical preferences.
 
+<!-- markdownlint-disable-next-line MD024-->
 ### *nix
 
 ```bash

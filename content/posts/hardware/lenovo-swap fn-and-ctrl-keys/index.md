@@ -6,8 +6,8 @@ hero: images/fn-ctrl-keys.jpg
 menu:
   sidebar:
     name: "Lenovo Swap Fn and Ctrl Keys"
-    identifier: fibonacci-sequence
-    parent: programming-tutorials
+    identifier: lenovo-swap-fn-and-ctrl-keys
+    parent: hardware
 ---
 
 I've been issued a lenovo laptop for the first time and the first thing I
@@ -38,6 +38,7 @@ Click on the `Restart now` button under `Advanced startup`.
 
 ![restart now](images/restart.png)
 
+### BIOS
 
-### BIOS 
-The option to swap the keys is in `Config -> keyboard/mouse -> Fn and Ctrl Key swap`.
+The option to swap the keys is in
+`Config -> keyboard/mouse -> Fn and Ctrl Key swap`.

@@ -11,18 +11,36 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: Cloud Employee
+    url: "https://cloudemployee.co.uk/"
+    location: Makati
+    # company overview
+    overview: "Cloud Employee is a software developer provider with offices in
+    the UK, Australia and the Philippines. They provide fully vetted software
+    Engineers in the Philippines across all software devlopment technologies to
+    over 100 STartups, SME's and large corprates."
+  positions:
+  - designation: Senior Software Developer
+    start: June 2022
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Senior Python developer for M2A Media (https://m2amedia.tv/)
+    - "Write Python code that is testable, performant, secure and of high quality
+    and deploy it to AWS Cloud"
+    - Work with a range of AWS Cloud services and APIs using Boto
+
+- company:
     name: Infor PSSC
     url: "https://www.infor.com"
     location: Taguig
-    # company overview
     overview: "Infor is a software company that focuses on business applications
       for organizations delivered via cloud computing as a service."
   positions:
   - designation: Senior Software Engineer
     start: January 2017
-    # don't provide end date if you are currently working there. It will be replaced by "Present"
-    # end: Dec 2020
-    # give some points about what was your responsibilities at the company.
+    end: June 2022
     responsibilities:
     - Lead developer for the Lawson System Foundation Multi-Database System
     - Developer for the Infor Spreadsheet Designer for Landmark Technology
@@ -31,13 +49,15 @@ experiences:
     name: RHOM LSI Design Philippines
     url: "https://www.rohm.com"
     location: Pasig
-    overview: ROHM is a  Japanese electronic parts manufacturer based in Kyoto, Japan.
+    overview: "ROHM is a  Japanese electronic parts manufacturer based in Kyoto,
+    Japan."
   positions:
   - designation: Senior Programmer
     start: September 2014
     end: January 2017
     responsibilities:
-    - Design and write testable and maintainable code for GUI Applications used for IC product development and demos.
+    - "Design and write testable and maintainable code for GUI Applications used
+    for IC product development and demos."
     - Maintenance of the proprietary development tools for microcontrollers.
 
 - company:
@@ -54,4 +74,5 @@ experiences:
     end: September 2014
     responsibilities:
     - Central resource for product offload and support at the A/T site.
-    - Validation and improvements of products' automated electrical test programs.
+    - "Validation and improvements of products' automated electrical test
+    programs."

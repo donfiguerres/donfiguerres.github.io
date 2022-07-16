@@ -55,7 +55,8 @@ git update-ref -d refs/original/refs/heads/master
 ```
 
 Then remove the directory.
-```
+
+```sh
 rm -rf .git/refs/original
 ```
 
@@ -67,7 +68,8 @@ git log --pretty=format:"[%h] %cd - Committer: %cn (%ce), Author: %an (%ae)"
 ```
 
 To push your changes to the remote repository.
-```
+
+```sh
 git push --force --tags origin HEAD:master
 ```
 
@@ -77,7 +79,6 @@ profile picture. Your commit should also now be shown in your contributions.
 
 > **NOTE**: Note that `.git/logs` will still have logs that contain your old
 name and email.
-
 
 ## Changing Local Commits
 
@@ -91,4 +92,5 @@ git commit --amend --reset-author
 ```
 
 ## Refrences
-source: https://stackoverflow.com/questions/750172/how-to-change-the-author-and-committer-name-and-e-mail-of-multiple-commits-in-gi/4903673
+
+source: <https://stackoverflow.com/questions/750172/how-to-change-the-author-and-committer-name-and-e-mail-of-multiple-commits-in-gi/4903673>

@@ -2,17 +2,17 @@
 
 This is the repo for my personal website at GitHub Pages.
 
-# Cloning
+## Cloning
 
-```
+```sh
 git clone https://github.com/donfiguerres/donfiguerres.github.io.git
 git submodule init
 git submodule update
 ```
 
-# TODO
+## TODO
+
 * Dark mode
 * Add post
-    * How I set up my repo to work on Github Pages
-    * Why switch to Hugo
-
+  * How I set up my repo to work on Github Pages
+  * Why switch to Hugo

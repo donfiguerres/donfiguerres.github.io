@@ -14,7 +14,6 @@ When working with a version control system, you normally have files that are
 not ignored in some projects but you would like to ignore in globally in your
 workstation environment. The ways to do that are listed below.
 
-
 ## Option 1: The git/ignore file in the home directory
 
 The user's ignore file is mentioned briefly in the
@@ -25,18 +24,17 @@ rules.
 > ***NOTE:*** This file will not exist by default so you have to manually create
 it.
 
-__*nix__
+### *nix
 
 ```bash
 ~/.config/git/ignore
 ```
 
-__Windows__
+### Windows
 
 ```cmd
 %USERPROFILE%\git\ignore
 ```
-
 
 ## Option 2: Using core.excludesFile
 
@@ -49,25 +47,24 @@ Follow the commands below to set-up your global gitignore file.
 `.gitignore` in the user's home directory the examples below to make it
 consistent with typical preferences.
 
-
-__*nix__
+### *nix
 
 ```bash
 git config --global core.excludesFile '~/.gitignore'
 ```
 
-__Windows cmd__
-
+### Windows cmd
 
 ```cmd
 git config --global core.excludesFile "%USERPROFILE%\.gitignore"
 ```
 
-__Windows PowerShell__
+### Windows PowerShell
 
 ```powershell
 git config --global core.excludesFile "$Env:USERPROFILE\.gitignore"
 ```
 
 ## References
-- https://stackoverflow.com/questions/7335420/global-git-ignore/
+
+- <https://stackoverflow.com/questions/7335420/global-git-ignore/>

@@ -1,7 +1,7 @@
 ---
 title: "Dark Theme in WSL2 GUI"
 description: "How to set a dark theme in the WSL2 GUI"
-date: 2022-08-09T10:49:00:00+08:00
+date: 2022-08-09T10:49:00+08:00
 hero: images/gnome-tweaks.png
 menu:
   sidebar:

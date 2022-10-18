@@ -28,22 +28,21 @@ summary: "Welcome to my domain! I am a software engineer with 10 years of
 # your social links
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
-- name: Github
-  icon: "fab fa-github"
-  url: "https://github.com/donfiguerres/"
-- name: Stackoverflow
-  icon: "fab fa-stack-overflow"
-  url: "https://stackoverflow.com/users/4097451/donfiguerres"
-- name: LinkedIn
-  icon: "fab fa-linkedin"
-  url: "https://www.linkedin.com/in/lyndon-figuerres/"
-- name: Instagram
-  icon: "fab fa-instagram"
-  url: "https://www.instagram.com/donfiggy/"
-- name: HackerRank
-  icon: "fab fa-hackerrank"
-  url: "https://www.hackerrank.com/lyndonfiguerres"
-
+  - name: Github
+    icon: "fab fa-github"
+    url: "https://github.com/donfiguerres/"
+  - name: Stackoverflow
+    icon: "fab fa-stack-overflow"
+    url: "https://stackoverflow.com/users/4097451/donfiguerres"
+  - name: LinkedIn
+    icon: "fab fa-linkedin"
+    url: "https://www.linkedin.com/in/lyndon-figuerres/"
+  - name: Instagram
+    icon: "fab fa-instagram"
+    url: "https://www.instagram.com/donfiggy/"
+  - name: HackerRank
+    icon: "fab fa-hackerrank"
+    url: "https://www.hackerrank.com/lyndonfiguerres"
 
 # your soft skills
 # give the percentage between 50 to 100 with 5 intervals.
@@ -52,19 +51,19 @@ socialLinks:
 # You can show your verifiable certificates from https://www.credly.com.
 # You can also show a circular bar indicating the level of expertise on a certain skill
 badges:
-- type: soft-skill-indicator
-  name: Project Lead
-  percentage: 80
-  color: blue
-- type: soft-skill-indicator
-  name: Agile Development
-  percentage: 80
-  color: yellow
-- type: soft-skill-indicator
-  name: Backend Development
-  percentage: 95
-  color: orange
-- type: soft-skill-indicator
-  name: Frontend Development
-  percentage: 50
-  color: green
+  - type: soft-skill-indicator
+    name: Project Lead
+    percentage: 80
+    color: blue
+  - type: soft-skill-indicator
+    name: Agile Development
+    percentage: 80
+    color: yellow
+  - type: soft-skill-indicator
+    name: Backend Development
+    percentage: 95
+    color: orange
+  - type: soft-skill-indicator
+    name: Frontend Development
+    percentage: 50
+    color: green

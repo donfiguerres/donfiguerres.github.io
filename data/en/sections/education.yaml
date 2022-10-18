@@ -10,9 +10,9 @@ section:
   # hideTitle: true
 
 degrees:
-- name: BS Electronics Engineering
-  icon: fa-graduation-cap
-  timeframe: 2006-2011
-  institution:
-    name: Saint Louis University
-    url: "https://www.slu.edu.ph/"
+  - name: BS Electronics Engineering
+    icon: fa-graduation-cap
+    timeframe: 2006-2011
+    institution:
+      name: Saint Louis University
+      url: "https://www.slu.edu.ph/"

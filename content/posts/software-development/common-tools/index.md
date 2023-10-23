@@ -100,6 +100,13 @@ find useful too. I use this list when setting up a new VM or workstation.
   - Follow [this guide](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-git)
   for setting up in WSL especially for credential management.
 
+## API Platform
+
+- [Postman](https://www.postman.com/)
+  - Postman is described in its website as "an API platform for building and using APIs".
+    It is something I often use for testing REST API endpoints. Currently, it
+    can also support websockets.
+
 ## LDAP Browser
 
 - [JXplorer](http://jxplorer.org)

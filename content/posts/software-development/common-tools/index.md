@@ -90,6 +90,9 @@ find useful too. I use this list when setting up a new VM or workstation.
 
 - [VirtualBox](www.virtualbox.org)
   - For hosting virtual machines
+
+## Containerization
+
 - [Docker](https://www.docker.com)
   - Modern day containerization.
 

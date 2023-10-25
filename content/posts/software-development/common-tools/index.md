@@ -24,6 +24,15 @@ find useful too. I use this list when setting up a new VM or workstation.
   - Can be used to test if a website will continue to function if all the
   security and privacy features are enabled.
 
+## Package Manager
+
+- [Homebrew](https://brew.sh/)
+  - Homebrew initially started as a MacOS package manager but is now available
+  for Linux distros. It's a good package manager if you want to always have
+  the latest version of the software you need. Otherwise, it's hard to keep
+  older versions as the philosophy of Homebrew is to only maintain the latest
+  versions.
+
 ## Editor
 
 - [VSCode](https://code.visualstudio.com)
@@ -42,6 +51,12 @@ find useful too. I use this list when setting up a new VM or workstation.
     - Remote - SSH and Remote - WSL by Microsoft
 - [Notepad++](https://notepad-plus-plus.org)
   - Handy windows notepad editor.
+
+- [neovim](https://neovim.io/)
+  - This is a very extensible successor to vim. The are a lot of plug ins
+  available to give it the IDE experience. I'm currently using
+  [LazyVim](https://www.lazyvim.org/) setup. I keep my current configuration
+  [here](https://github.com/donfiguerres/donfiguerres-neovim-config).
 
 ## IDE
 
@@ -69,13 +84,16 @@ find useful too. I use this list when setting up a new VM or workstation.
   - A great process manager for Linux.
   - A modern alternative to top.
 
-## Terminal Emulator
+## Terminal and Terminal Emulator
 
 - [PuTTY](https://www.putty.org)
   - Remote connection to *nix and IBM i machines.
   - WSL can basically replace this tool but I'm keeping it here just in case.
 - [WinSCP](https://winscp.net)
   - File explorer to a remote machine.
+- [tmux](https://github.com/tmux/tmux/)
+  - Tmux is a terminal multiplexer that helps you to manage multiple terminal
+  sessions.
 
 ## Remote Desktop
 
@@ -127,3 +145,13 @@ find useful too. I use this list when setting up a new VM or workstation.
 - [IBM i Access - Client Solutions](https://www.ibm.com/support/pages/ibm-i-access-client-solutions)
   - 5250 terminal (green screen) emulator is handy when connecting to IBM i
   machines.
+
+## Meeting Tools
+
+Developing software requires a lot of collaboration so minimizing noise coming
+into your microphone is also essential.
+
+- [Real-time Noise Suppression Plugin](https://github.com/werman/noise-suppression-for-voice)
+  - This is a noise suppression plugin that filters out non-voice sound from
+  your microphone. I currently use it as a plugin for [Equalizer APO](https://sourceforge.net/projects/equalizerapo/)
+  which is an equalizer application for Windows.

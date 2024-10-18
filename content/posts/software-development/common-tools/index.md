@@ -23,6 +23,8 @@ find useful too. I use this list when setting up a new VM or workstation.
   - It has a lot of default privacy features.
   - Can be used to test if a website will continue to function if all the
   security and privacy features are enabled.
+- [Firfox](https://www.mozilla.org/)
+  - Has cool privacy features and containerization feature.
 
 ## Package Manager
 

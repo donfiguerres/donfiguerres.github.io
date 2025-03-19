@@ -52,9 +52,13 @@ socialLinks:
 # You can also show a circular bar indicating the level of expertise on a certain skill
 badges:
   - type: certification
-    name: AWS Developer Associate
+    name: AWS Developer - Associate
     url: https://www.credly.com/badges/4dc8d5d9-9c4a-4919-a329-3428946912c1/public_url
     badge: https://images.credly.com/size/680x680/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png
+  - type: certification
+    name: AWS Solutions Architect - Associate
+    url: https://www.credly.com/badges/66f2334f-0267-4d87-a006-b96fb713eddf/public_url
+    badge: https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png
   - type: soft-skill-indicator
     name: Project Lead
     percentage: 80

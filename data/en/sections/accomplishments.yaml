@@ -22,6 +22,18 @@ accomplishments:
       are able to develop, deploy, and debug cloud-based applications that
       follow AWS best practices."
     certificateURL: "https://www.credly.com/badges/4dc8d5d9-9c4a-4919-a329-3428946912c1/public_url"
+  - name: AWS Solutions Architect - Associate
+    timeline: "March 19, 2025 - March 19, 2028"
+    organization:
+      name: AWS
+      url: https://aws.amazon.com/
+    courseOverview: "Earners of this certification have a comprehensive
+      understanding of AWS services and technologies. They demonstrated the
+      ability to build secure and robust solutions using architectural design principles
+      based on customer requirements. Badge owners are able to strategically design
+      well-architected distributed systems that are scalable, resilient, efficient, and
+      fault-tolerant."
+    certificateURL: "https://www.credly.com/badges/66f2334f-0267-4d87-a006-b96fb713eddf/public_url"
   - name: Python Certification
     timeline: "June 2022"
     organization:

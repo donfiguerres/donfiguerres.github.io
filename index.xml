@@ -1,23 +1,217 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Don Figuerres</title><link>https://donfiguerres.com/</link><description>Recent content on Don Figuerres</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 28 May 2024 22:40:00 +0800</lastBuildDate><atom:link href="https://donfiguerres.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Tmux Settings</title><link>https://donfiguerres.com/posts/software-development/tmux-settings/</link><pubDate>Tue, 28 May 2024 22:40:00 +0800</pubDate><guid>https://donfiguerres.com/posts/software-development/tmux-settings/</guid><description>Saving here a copy of tmux settings so it&amp;rsquo;s easy to set it up in a new machine.
-set -g mouse on # vi keybindings set-window-option -g mode-keys vi bind-key -T copy-mode-vi v send -X begin-selection bind-key -T copy-mode-vi V send -X select-line bind-key -T copy-mode-vi y send -X copy-pipe-and-cancel &amp;#39;xclip -in -selection clipboard&amp;#39; # required by neovim checkhealth set -g default-terminal &amp;#34;tmux-256color&amp;#34; set-option -sa terminal-features &amp;#39;,xterm-256color:RGB&amp;#39; set-option -sg escape-time 10 set-option -g focus-events on</description></item><item><title>Dark Theme in WSL2 GUI</title><link>https://donfiguerres.com/posts/wsl2/dark-theme-in-wsl2/</link><pubDate>Tue, 09 Aug 2022 10:49:00 +0800</pubDate><guid>https://donfiguerres.com/posts/wsl2/dark-theme-in-wsl2/</guid><description>Running GUI apps in WSL2 has finally been made easier in more recent versions of Windows 11 and Windows 10 with WSL2. If you&amp;rsquo;re like me, who use Windows as a daily driver for software development, you know that this makes life a bit easier.
-Before the recent updates, you had to install an X Server and that is what you set as your display in your WSL2 environment - a bit old school.</description></item><item><title>Hosting a Website Using AWS S3</title><link>https://donfiguerres.com/posts/cloud/aws/hosting-website-using-aws-s3/</link><pubDate>Thu, 04 Aug 2022 10:23:00 +0800</pubDate><guid>https://donfiguerres.com/posts/cloud/aws/hosting-website-using-aws-s3/</guid><description>NOTE: This post is still a work in progress.
-This blog talks about how to setup a website using AWS S3 which might be intimidating for complete beginners. I also plan to create a tutorial/blog for complete beginners who want to setup their own website which I should link here in the future.
-Overview Hosting a website typically requires you to setup the following.
-Web Server - where all your files uploaded and served through the network Content Delivery Network (CDN) - where your static files are cached Certificate - for SSL Domain Name System (DNS) - where your domain name is registered Component What we&amp;rsquo;ll use Web Server S3 CDN CloudFront Certificate ACM DNS GoDaddy Step 1: Setup your S3 bucket Create an S3 bucket in your AWS account and enable Static website hosting.</description></item><item><title>VS Code Python Test Debugging Does Not Hit Breakpoint</title><link>https://donfiguerres.com/posts/software-development/vscode/python-test-debugging-does-not-hit-breakpoint/</link><pubDate>Tue, 26 Jul 2022 00:00:00 +0800</pubDate><guid>https://donfiguerres.com/posts/software-development/vscode/python-test-debugging-does-not-hit-breakpoint/</guid><description>I had this problem in Python development environment wherein a breakpoint is not hit while trying to debug tests. It turns out that this is a known issue and a work around is available via the launch.json file.
-{ &amp;#34;version&amp;#34;: &amp;#34;0.2.0&amp;#34;, &amp;#34;configurations&amp;#34;: [ { &amp;#34;name&amp;#34;: &amp;#34;Debug Tests&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;python&amp;#34;, &amp;#34;request&amp;#34;: &amp;#34;launch&amp;#34;, &amp;#34;purpose&amp;#34;: [ &amp;#34;debug-test&amp;#34; ], &amp;#34;console&amp;#34;: &amp;#34;integratedTerminal&amp;#34;, &amp;#34;justMyCode&amp;#34;: false, &amp;#34;env&amp;#34;: { &amp;#34;PYTEST_ADDOPTS&amp;#34;: &amp;#34;--no-cov&amp;#34; } } ] } Below is the explanation form Microsoft.</description></item><item><title>Global gitignore File</title><link>https://donfiguerres.com/posts/version-control/git/global-gitignore/</link><pubDate>Fri, 01 Jul 2022 23:15:00 +0800</pubDate><guid>https://donfiguerres.com/posts/version-control/git/global-gitignore/</guid><description>When working with a version control system, you normally have files that are not ignored in some projects but you would like to ignore in globally in your workstation environment. The ways to do that are listed below.
-Option 1: The git/ignore file in the home directory The user&amp;rsquo;s ignore file is mentioned briefly in the Git documentation. You can add here your ignore rules the same way as you do it with your project .</description></item><item><title>How to swap the Fn and Ctrl keys in a Lenovo laptop</title><link>https://donfiguerres.com/posts/hardware/lenovo-swap-fn-and-ctrl-keys/</link><pubDate>Fri, 01 Jul 2022 18:52:00 +0800</pubDate><guid>https://donfiguerres.com/posts/hardware/lenovo-swap-fn-and-ctrl-keys/</guid><description>I&amp;rsquo;ve been issued a lenovo laptop for the first time and the first thing I noticed is this weird keyboard layout where the typical locations of the left Fn and Ctrl keys are interchanged. I&amp;rsquo;m already used to the typical layout where the Ctrl key is in the leftmost part followed by the Fn key. Fortunately, Lenovo has made it possible to swap the Fn and Ctrl keys through BIOS. The complete instructions are in this how-to article.</description></item><item><title>Common Tools for Software Development</title><link>https://donfiguerres.com/posts/software-development/common-tools/</link><pubDate>Thu, 23 Jun 2022 23:34:00 +0800</pubDate><guid>https://donfiguerres.com/posts/software-development/common-tools/</guid><description>List of tools that I&amp;rsquo;ve used throughout my development career that you might find useful too. I use this list when setting up a new VM or workstation.
-Browser Google Chrome It&amp;rsquo;s most people&amp;rsquo;s default browser although Edge has a better performance in Windows. Brave Browser I use this personally for browsing. It has a lot of default privacy features. Can be used to test if a website will continue to function if all the security and privacy features are enabled.</description></item><item><title>Java Performance Testing Using Zerocode</title><link>https://donfiguerres.com/posts/software-development/java/java-performance-testing-using-zerocode/</link><pubDate>Wed, 22 Jun 2022 23:10:00 +0800</pubDate><guid>https://donfiguerres.com/posts/software-development/java/java-performance-testing-using-zerocode/</guid><description>In one of my previous projects, I had to add a performance testing suite for our Java APIs to measure the performance gain in the performance improvement that I was working on.
-After some research, I found that Zerocode is able to fulfill our needs. Their GitHub Repo also includes an extensive documentation which made the process much easier for me.
-I found that you can reuse your existing JUnit tests as performance tests using the LoadWith annotation.</description></item><item><title>Git Connection Errors During Cloning</title><link>https://donfiguerres.com/posts/version-control/git/git-connection-errors-during-cloning/</link><pubDate>Fri, 14 Jan 2022 17:18:36 +0800</pubDate><guid>https://donfiguerres.com/posts/version-control/git/git-connection-errors-during-cloning/</guid><description>I got these errors recently when I was trying to clone one of our repos. Unstable network connection or network infrastructure may have caused this so as a workaround, you can clone the repo &amp;ldquo;bit-by-bit&amp;rdquo;.
-$ git clone ssh://git@your.host.com/yourrepo.git Cloning into &amp;#39;projectdir&amp;#39;... ... remote: Enumerating objects: 26639, done. remote: Counting objects: 100% (269/269), done. remote: Compressing objects: 100% (152/152), done. client_loop: send disconnect: Connection reset by peer6 MiB/s fetch-pack: unexpected disconnect while reading sideband packet fatal: fetch-pack: invalid index-pack output $ git clone ssh://git@your.</description></item><item><title>Changing Committer, Author, and Email in Git</title><link>https://donfiguerres.com/posts/version-control/git/changing-committer-author-and-email-in-git/</link><pubDate>Tue, 10 Aug 2021 00:12:25 +0800</pubDate><guid>https://donfiguerres.com/posts/version-control/git/changing-committer-author-and-email-in-git/</guid><description>I recently observed in my GitHub profile that most of my commits are not shown in my contribution activity. After doing a quick search, I found that the problem because my email in my commits do not match the email associated with my GitHub account.
-Changing Commits in the Remote Repository You need to use the filter-branch command to change the emails and names.
-git filter-branch -f --env-filter &amp;#39; GIT_AUTHOR_NAME=&amp;#34;yourname&amp;#34;; GIT_AUTHOR_EMAIL=&amp;#34;youremaill@host.</description></item><item><title>Factorial</title><link>https://donfiguerres.com/posts/programming-tutorials/factorial/</link><pubDate>Tue, 01 Jun 2021 02:57:52 +0800</pubDate><guid>https://donfiguerres.com/posts/programming-tutorials/factorial/</guid><description>Factorial is the product of all positive integers less than or equal to a given positive integer and denoted by that integer and an exclamation point.
-n! = n * (n-1) * (n-2) * (n-3) ... 3 * 2 * 1
-For example
-5! = 5 * 4 * 3 * 2 * 1 = 120
-Just like the Fibonacci sequence, this is one of the basic forms of exercise used in programming and is commonly used to introduce recursion.</description></item><item><title>Fibonacci Sequence</title><link>https://donfiguerres.com/posts/programming-tutorials/fibonacci-sequence/</link><pubDate>Tue, 01 Jun 2021 00:12:25 +0800</pubDate><guid>https://donfiguerres.com/posts/programming-tutorials/fibonacci-sequence/</guid><description>The Fibonacci sequence is a series of numbers where a number is the addition of the last two numbers. This is one of the basic forms of exercise used in programming and is almost always present in a programming exam. Therefore, learning how to print the Fibonacci sequence is essential to anyone learning programming or a new programming language.
-0 1 1 2 3 5 8 13 21 34 55 89 144 233 377</description></item><item><title>CentOS 7 VirtualBox 5.2 Error</title><link>https://donfiguerres.com/posts/virtualbox/centos-7-virtualbox-5-2/</link><pubDate>Wed, 25 Oct 2017 00:00:00 +0000</pubDate><guid>https://donfiguerres.com/posts/virtualbox/centos-7-virtualbox-5-2/</guid><description>Issue A recent linux kernel update (3.10.0-693.2.2.el7.x86_64) caused the VirtualBox Guest Additions 5.2 in my CentOS7 box to break.
-Error message:
-/tmp/vbox.0/hgsmi_base.c: In function ‘hgsmi_send_caps_info’: /tmp/vbox.0/hgsmi_base.c:99:2: error: implicit declaration of function ‘AssertRC’ [-Werror=implicit-function-declaration] AssertRC(p-&amp;gt;rc);^M ^ cc1: some warnings being treated as errors make[2]: *** [/tmp/vbox.0/hgsmi_base.o] Error 1 make[1]: *** [_module_/tmp/vbox.0] Error 2 make: *** [vboxvideo] Error 2 More information is in this virtualbox thread
-virtualbox ticket
-Resolution An updated VirtualBox Guest Additions installer which contains the fix can now be downloaded from the virtualbox website.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Don Figuerres</title><link>https://donfiguerres.com/</link><description>Recent content on Don Figuerres</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 05 May 2025 22:00:00 +0800</lastBuildDate><atom:link href="https://donfiguerres.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Setting up multiple SSH keys in a single machine</title><link>https://donfiguerres.com/posts/version-control/git/multiple-ssh-for-git/</link><pubDate>Mon, 05 May 2025 22:00:00 +0800</pubDate><guid>https://donfiguerres.com/posts/version-control/git/multiple-ssh-for-git/</guid><description>&lt;p&gt;This is helpful in order to authenticate using SSH keys in a single machine for multiple
+accounts.&lt;/p&gt;
+&lt;p&gt;For example, you want to setup SSH keys in GitHub to authenticate for you work account
+and another SSH key to authenticate for your personal account.&lt;/p&gt;
+&lt;h2 id="step-1-generate-ssh-keys"&gt;Step 1: Generate SSH keys&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ssh-keygen -t ed25519 -C &lt;span style="color:#e6db74"&gt;&amp;#34;&amp;lt;your_email@example.com&amp;gt; &amp;lt;your organization name&amp;gt; &amp;lt;service&amp;gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Example&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ssh-keygen -t ed25519 -C &lt;span style="color:#e6db74"&gt;&amp;#34;myaccount@gmail.com MyOrg GitHub&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;When asked for the file path of the key, make sure to add more context to the file name.
+I usually use &lt;code&gt;encryption_service_org&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Tmux Settings</title><link>https://donfiguerres.com/posts/software-development/tmux-settings/</link><pubDate>Tue, 28 May 2024 22:40:00 +0800</pubDate><guid>https://donfiguerres.com/posts/software-development/tmux-settings/</guid><description>&lt;p&gt;Saving here a copy of tmux settings so it&amp;rsquo;s easy to set it up in a new machine.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;set -g mouse on
+# vi keybindings
+set-window-option -g mode-keys vi
+bind-key -T copy-mode-vi v send -X begin-selection
+bind-key -T copy-mode-vi V send -X select-line
+bind-key -T copy-mode-vi y send -X copy-pipe-and-cancel &amp;#39;xclip -in -selection clipboard&amp;#39;
+# required by neovim checkhealth
+set -g default-terminal &amp;#34;tmux-256color&amp;#34;
+set-option -sa terminal-features &amp;#39;,xterm-256color:RGB&amp;#39;
+set-option -sg escape-time 10
+set-option -g focus-events on
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Dark Theme in WSL2 GUI</title><link>https://donfiguerres.com/posts/wsl2/dark-theme-in-wsl2/</link><pubDate>Tue, 09 Aug 2022 10:49:00 +0800</pubDate><guid>https://donfiguerres.com/posts/wsl2/dark-theme-in-wsl2/</guid><description>&lt;p&gt;Running GUI apps in WSL2 has finally been made easier in more recent versions of
+Windows 11 and Windows 10 with WSL2. If you&amp;rsquo;re like me, who use Windows as a
+daily driver for software development, you know that this makes life a bit
+easier.&lt;/p&gt;
+&lt;p&gt;Before the recent updates, you had to install an X Server and that is what you
+set as your display in your WSL2 environment - a bit old school. But now, WSL2
+is better integrated with the host Windows environment that you no longer need
+to install an X Server for Linux GUI apps to work.&lt;/p&gt;</description></item><item><title>Hosting a Website Using AWS S3</title><link>https://donfiguerres.com/posts/cloud/aws/hosting-website-using-aws-s3/</link><pubDate>Thu, 04 Aug 2022 10:23:00 +0800</pubDate><guid>https://donfiguerres.com/posts/cloud/aws/hosting-website-using-aws-s3/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: This post is still a work in progress.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This blog talks about how to setup a website using AWS S3 which might be
+intimidating for complete beginners.
+I also plan to create a tutorial/blog for complete beginners who want to setup
+their own website which I should link here in the future.&lt;/p&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Hosting a website typically requires you to setup the following.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Web Server - where all your files uploaded and served through the network&lt;/li&gt;
+&lt;li&gt;Content Delivery Network (CDN) - where your static files are cached&lt;/li&gt;
+&lt;li&gt;Certificate - for SSL&lt;/li&gt;
+&lt;li&gt;Domain Name System (DNS) - where your domain name is registered&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Component&lt;/th&gt;
+&lt;th&gt;What we&amp;rsquo;ll use&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Web Server&lt;/td&gt;
+&lt;td&gt;S3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CDN&lt;/td&gt;
+&lt;td&gt;CloudFront&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Certificate&lt;/td&gt;
+&lt;td&gt;ACM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;DNS&lt;/td&gt;
+&lt;td&gt;GoDaddy&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="step-1-setup-your-s3-bucket"&gt;Step 1: Setup your S3 bucket&lt;/h2&gt;
+&lt;p&gt;Create an S3 bucket in your AWS account and enable Static website hosting.
+Uncheck &lt;em&gt;Block all public access&lt;/em&gt; and add a bucket policy. These settings will
+allow your files to be publicly accessed.&lt;/p&gt;</description></item><item><title>VS Code Python Test Debugging Does Not Hit Breakpoint</title><link>https://donfiguerres.com/posts/software-development/vscode/python-test-debugging-does-not-hit-breakpoint/</link><pubDate>Tue, 26 Jul 2022 00:00:00 +0800</pubDate><guid>https://donfiguerres.com/posts/software-development/vscode/python-test-debugging-does-not-hit-breakpoint/</guid><description>&lt;p&gt;I had this problem in Python development environment wherein a breakpoint is not
+hit while trying to debug tests. It turns out that this is a known issue and a
+work around is available via the launch.json file.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-json" data-lang="json"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;version&amp;#34;&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#34;0.2.0&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;configurations&amp;#34;&lt;/span&gt;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;name&amp;#34;&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#34;Debug Tests&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;type&amp;#34;&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#34;python&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;request&amp;#34;&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#34;launch&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;purpose&amp;#34;&lt;/span&gt;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;debug-test&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ],
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;console&amp;#34;&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#34;integratedTerminal&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;justMyCode&amp;#34;&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;false&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;env&amp;#34;&lt;/span&gt;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;PYTEST_ADDOPTS&amp;#34;&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#34;--no-cov&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Below is the explanation form Microsoft.&lt;/p&gt;</description></item><item><title>Global gitignore File</title><link>https://donfiguerres.com/posts/version-control/git/global-gitignore/</link><pubDate>Fri, 01 Jul 2022 23:15:00 +0800</pubDate><guid>https://donfiguerres.com/posts/version-control/git/global-gitignore/</guid><description>&lt;p&gt;When working with a version control system, you normally have files that are
+not ignored in some projects but you would like to ignore in globally in your
+workstation environment. The ways to do that are listed below.&lt;/p&gt;
+&lt;h2 id="option-1-the-gitignore-file-in-the-home-directory"&gt;Option 1: The git/ignore file in the home directory&lt;/h2&gt;
+&lt;p&gt;The user&amp;rsquo;s ignore file is mentioned briefly in the
+&lt;a href="https://git-scm.com/docs/gitignore#_synopsis" target="_blank" rel="noopener"&gt;Git documentation&lt;/a&gt;. You can add
+here your ignore rules the same way as you do it with your project .gitignore
+rules.&lt;/p&gt;</description></item><item><title>How to swap the Fn and Ctrl keys in a Lenovo laptop</title><link>https://donfiguerres.com/posts/hardware/lenovo-swap-fn-and-ctrl-keys/</link><pubDate>Fri, 01 Jul 2022 18:52:00 +0800</pubDate><guid>https://donfiguerres.com/posts/hardware/lenovo-swap-fn-and-ctrl-keys/</guid><description>&lt;p&gt;I&amp;rsquo;ve been issued a lenovo laptop for the first time and the first thing I
+noticed is this weird keyboard layout where the typical locations of the left
+Fn and Ctrl keys are interchanged. I&amp;rsquo;m already used to the typical layout where
+the Ctrl key is in the leftmost part followed by the Fn key. Fortunately,
+Lenovo has made it possible to swap the Fn and Ctrl keys through BIOS. The
+complete instructions are in this
+&lt;a href="https://support.lenovo.com/us/en/solutions/ht074187-how-to-swap-the-fn-function-and-ctrl-control-keyboard-keys-in-bios" target="_blank" rel="noopener"&gt;how-to article&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Common Tools for Software Development</title><link>https://donfiguerres.com/posts/software-development/common-tools/</link><pubDate>Thu, 23 Jun 2022 23:34:00 +0800</pubDate><guid>https://donfiguerres.com/posts/software-development/common-tools/</guid><description>&lt;p&gt;List of tools that I&amp;rsquo;ve used throughout my development career that you might
+find useful too. I use this list when setting up a new VM or workstation.&lt;/p&gt;
+&lt;h2 id="browser"&gt;Browser&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.google.com/chrome" target="_blank" rel="noopener"&gt;Google Chrome&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;It&amp;rsquo;s most people&amp;rsquo;s default browser although Edge has a better performance in
+Windows.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://brave.com" target="_blank" rel="noopener"&gt;Brave Browser&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;I use this personally for browsing.&lt;/li&gt;
+&lt;li&gt;It has a lot of default privacy features.&lt;/li&gt;
+&lt;li&gt;Can be used to test if a website will continue to function if all the
+security and privacy features are enabled.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mozilla.org/" target="_blank" rel="noopener"&gt;Firfox&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Has cool privacy features and containerization feature.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="package-manager"&gt;Package Manager&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://brew.sh/" target="_blank" rel="noopener"&gt;Homebrew&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Homebrew initially started as a MacOS package manager but is now available
+for Linux distros. It&amp;rsquo;s a good package manager if you want to always have
+the latest version of the software you need. Otherwise, it&amp;rsquo;s hard to keep
+older versions as the philosophy of Homebrew is to only maintain the latest
+versions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="editor"&gt;Editor&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://code.visualstudio.com" target="_blank" rel="noopener"&gt;VSCode&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Java Performance Testing Using Zerocode</title><link>https://donfiguerres.com/posts/software-development/java/java-performance-testing-using-zerocode/</link><pubDate>Wed, 22 Jun 2022 23:10:00 +0800</pubDate><guid>https://donfiguerres.com/posts/software-development/java/java-performance-testing-using-zerocode/</guid><description>&lt;p&gt;In one of my previous projects, I had to add a performance testing suite for
+our Java APIs to measure the performance gain in the performance improvement
+that I was working on.&lt;/p&gt;
+&lt;p&gt;After some research, I found that &lt;a href="https://zerocode.io/" target="_blank" rel="noopener"&gt;Zerocode&lt;/a&gt; is able to
+fulfill our needs. Their &lt;a href="https://github.com/authorjapps/zerocode" target="_blank" rel="noopener"&gt;GitHub Repo&lt;/a&gt;
+also includes an extensive documentation which made the process much easier for
+me.&lt;/p&gt;
+&lt;p&gt;I found that you can reuse your existing JUnit tests as performance tests using
+the LoadWith annotation.&lt;/p&gt;</description></item><item><title>Git Connection Errors During Cloning</title><link>https://donfiguerres.com/posts/version-control/git/git-connection-errors-during-cloning/</link><pubDate>Fri, 14 Jan 2022 17:18:36 +0800</pubDate><guid>https://donfiguerres.com/posts/version-control/git/git-connection-errors-during-cloning/</guid><description>&lt;p&gt;I got these errors recently when I was trying to clone one of our repos.
+Unstable network connection or network infrastructure may have caused this so
+as a workaround, you can clone the repo &amp;ldquo;bit-by-bit&amp;rdquo;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ git clone ssh://git@your.host.com/yourrepo.git
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Cloning into &lt;span style="color:#e6db74"&gt;&amp;#39;projectdir&amp;#39;&lt;/span&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;remote: Enumerating objects: 26639, &lt;span style="color:#66d9ef"&gt;done&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;remote: Counting objects: 100% &lt;span style="color:#f92672"&gt;(&lt;/span&gt;269/269&lt;span style="color:#f92672"&gt;)&lt;/span&gt;, &lt;span style="color:#66d9ef"&gt;done&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;remote: Compressing objects: 100% &lt;span style="color:#f92672"&gt;(&lt;/span&gt;152/152&lt;span style="color:#f92672"&gt;)&lt;/span&gt;, &lt;span style="color:#66d9ef"&gt;done&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;client_loop: send disconnect: Connection reset by peer6 MiB/s
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;fetch-pack: unexpected disconnect &lt;span style="color:#66d9ef"&gt;while&lt;/span&gt; reading sideband packet
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;fatal: fetch-pack: invalid index-pack output
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ git clone ssh://git@your.host.com/yourrepo.git
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Cloning into &lt;span style="color:#e6db74"&gt;&amp;#39;projectdir&amp;#39;&lt;/span&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;remote: Enumerating objects: 26639, &lt;span style="color:#66d9ef"&gt;done&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;remote: Counting objects: 100% &lt;span style="color:#f92672"&gt;(&lt;/span&gt;269/269&lt;span style="color:#f92672"&gt;)&lt;/span&gt;, &lt;span style="color:#66d9ef"&gt;done&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;remote: Compressing objects: 100% &lt;span style="color:#f92672"&gt;(&lt;/span&gt;152/152&lt;span style="color:#f92672"&gt;)&lt;/span&gt;, &lt;span style="color:#66d9ef"&gt;done&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;client_loop: send disconnect: Connection reset by peer9 MiB/s
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;fatal: early EOF
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;fatal: fetch-pack: invalid index-pack outputing sideband packet
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="workaround"&gt;Workaround&lt;/h2&gt;
+&lt;p&gt;The workaround is to checkout the repo bit-by-bit.&lt;/p&gt;</description></item><item><title>Changing Committer, Author, and Email in Git</title><link>https://donfiguerres.com/posts/version-control/git/changing-committer-author-and-email-in-git/</link><pubDate>Tue, 10 Aug 2021 00:12:25 +0800</pubDate><guid>https://donfiguerres.com/posts/version-control/git/changing-committer-author-and-email-in-git/</guid><description>&lt;p&gt;I recently observed in my GitHub profile that most of my commits are not
+shown in my contribution activity. After doing a quick search, I found that the
+problem because my email in my commits do not match the email associated with
+my GitHub account.&lt;/p&gt;
+&lt;h2 id="changing-commits-in-the-remote-repository"&gt;Changing Commits in the Remote Repository&lt;/h2&gt;
+&lt;p&gt;You need to use the filter-branch command to change the emails and names.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git filter-branch -f --env-filter &lt;span style="color:#e6db74"&gt;&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; GIT_AUTHOR_NAME=&amp;#34;yourname&amp;#34;;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; GIT_AUTHOR_EMAIL=&amp;#34;youremaill@host.com&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; GIT_COMMITTER_NAME=&amp;#34;yourname&amp;#34;;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; GIT_COMMITTER_EMAIL=&amp;#34;youremail@host.com&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;&amp;#39;&lt;/span&gt; HEAD
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The command above changes the email and name for all of the commits. If you&amp;rsquo;re
+working on a shared repository, you need to use an if statement to change only
+your commits.&lt;/p&gt;</description></item><item><title>Factorial</title><link>https://donfiguerres.com/posts/programming-tutorials/factorial/</link><pubDate>Tue, 01 Jun 2021 02:57:52 +0800</pubDate><guid>https://donfiguerres.com/posts/programming-tutorials/factorial/</guid><description>&lt;p&gt;Factorial is the product of all positive integers less than or equal to a given
+positive integer and denoted by that integer and an exclamation point.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;n! = n * (n-1) * (n-2) * (n-3) ... 3 * 2 * 1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;For example&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;5! = 5 * 4 * 3 * 2 * 1 = 120&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Just like the Fibonacci sequence, this is one of the basic forms of exercise
+used in programming and is commonly used to introduce recursion. I have written
+here both iterative and recursive implementations.&lt;/p&gt;</description></item><item><title>Fibonacci Sequence</title><link>https://donfiguerres.com/posts/programming-tutorials/fibonacci-sequence/</link><pubDate>Tue, 01 Jun 2021 00:12:25 +0800</pubDate><guid>https://donfiguerres.com/posts/programming-tutorials/fibonacci-sequence/</guid><description>&lt;p&gt;The Fibonacci sequence is a series of numbers where a number is the addition
+of the last two numbers. This is one of the basic forms of exercise used in
+programming and is almost always present in a programming exam. Therefore,
+learning how to print the Fibonacci sequence is essential to anyone learning
+programming or a new programming language.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;0 1 1 2 3 5 8 13 21 34 55 89 144 233 377&lt;/code&gt;&lt;/p&gt;</description></item><item><title>CentOS 7 VirtualBox 5.2 Error</title><link>https://donfiguerres.com/posts/virtualbox/centos-7-virtualbox-5-2/</link><pubDate>Wed, 25 Oct 2017 00:00:00 +0000</pubDate><guid>https://donfiguerres.com/posts/virtualbox/centos-7-virtualbox-5-2/</guid><description>&lt;h2 id="issue"&gt;Issue&lt;/h2&gt;
+&lt;p&gt;A recent linux kernel update (3.10.0-693.2.2.el7.x86_64) caused the VirtualBox Guest Additions 5.2 in my CentOS7 box to break.&lt;/p&gt;
+&lt;p&gt;Error message:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;/tmp/vbox.0/hgsmi_base.c: In &lt;span style="color:#66d9ef"&gt;function&lt;/span&gt; ‘hgsmi_send_caps_info’:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;/tmp/vbox.0/hgsmi_base.c:99:2: error: implicit declaration of &lt;span style="color:#66d9ef"&gt;function&lt;/span&gt; ‘AssertRC’ &lt;span style="color:#f92672"&gt;[&lt;/span&gt;-Werror&lt;span style="color:#f92672"&gt;=&lt;/span&gt;implicit-function-declaration&lt;span style="color:#f92672"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; AssertRC&lt;span style="color:#f92672"&gt;(&lt;/span&gt;p-&amp;gt;rc&lt;span style="color:#f92672"&gt;)&lt;/span&gt;;^M
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ^
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cc1: some warnings being treated as errors
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;make&lt;span style="color:#f92672"&gt;[&lt;/span&gt;2&lt;span style="color:#f92672"&gt;]&lt;/span&gt;: *** &lt;span style="color:#f92672"&gt;[&lt;/span&gt;/tmp/vbox.0/hgsmi_base.o&lt;span style="color:#f92672"&gt;]&lt;/span&gt; Error &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;make&lt;span style="color:#f92672"&gt;[&lt;/span&gt;1&lt;span style="color:#f92672"&gt;]&lt;/span&gt;: *** &lt;span style="color:#f92672"&gt;[&lt;/span&gt;_module_/tmp/vbox.0&lt;span style="color:#f92672"&gt;]&lt;/span&gt; Error &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;make: *** &lt;span style="color:#f92672"&gt;[&lt;/span&gt;vboxvideo&lt;span style="color:#f92672"&gt;]&lt;/span&gt; Error &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;More information is in this &lt;a href="https://forums.virtualbox.org/viewtopic.php?f=1&amp;amp;t=85080" target="_blank" rel="noopener"&gt;virtualbox thread&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.virtualbox.org/ticket/17163" target="_blank" rel="noopener"&gt;virtualbox ticket&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="resolution"&gt;Resolution&lt;/h2&gt;
+&lt;p&gt;An updated VirtualBox Guest Additions installer which contains the fix can now be downloaded from the &lt;a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" rel="noopener"&gt;virtualbox website&lt;/a&gt;.&lt;/p&gt;</description></item></channel></rss>

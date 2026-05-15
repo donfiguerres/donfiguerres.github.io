@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cloud on Don Figuerres</title><link>https://donfiguerres.com/posts/cloud/</link><description>Recent content in Cloud on Don Figuerres</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 04 Aug 2022 10:23:00 +0800</lastBuildDate><atom:link href="https://donfiguerres.com/posts/cloud/index.xml" rel="self" type="application/rss+xml"/><item><title>Hosting a Website Using AWS S3</title><link>https://donfiguerres.com/posts/cloud/aws/hosting-website-using-aws-s3/</link><pubDate>Thu, 04 Aug 2022 10:23:00 +0800</pubDate><guid>https://donfiguerres.com/posts/cloud/aws/hosting-website-using-aws-s3/</guid><description>NOTE: This post is still a work in progress.
-This blog talks about how to setup a website using AWS S3 which might be intimidating for complete beginners. I also plan to create a tutorial/blog for complete beginners who want to setup their own website which I should link here in the future.
-Overview Hosting a website typically requires you to setup the following.
-Web Server - where all your files uploaded and served through the network Content Delivery Network (CDN) - where your static files are cached Certificate - for SSL Domain Name System (DNS) - where your domain name is registered Component What we&amp;rsquo;ll use Web Server S3 CDN CloudFront Certificate ACM DNS GoDaddy Step 1: Setup your S3 bucket Create an S3 bucket in your AWS account and enable Static website hosting.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cloud on Don Figuerres</title><link>https://donfiguerres.com/posts/cloud/</link><description>Recent content in Cloud on Don Figuerres</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 04 Aug 2022 10:23:00 +0800</lastBuildDate><atom:link href="https://donfiguerres.com/posts/cloud/index.xml" rel="self" type="application/rss+xml"/><item><title>Hosting a Website Using AWS S3</title><link>https://donfiguerres.com/posts/cloud/aws/hosting-website-using-aws-s3/</link><pubDate>Thu, 04 Aug 2022 10:23:00 +0800</pubDate><guid>https://donfiguerres.com/posts/cloud/aws/hosting-website-using-aws-s3/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: This post is still a work in progress.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This blog talks about how to setup a website using AWS S3 which might be
+intimidating for complete beginners.
+I also plan to create a tutorial/blog for complete beginners who want to setup
+their own website which I should link here in the future.&lt;/p&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Hosting a website typically requires you to setup the following.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Web Server - where all your files uploaded and served through the network&lt;/li&gt;
+&lt;li&gt;Content Delivery Network (CDN) - where your static files are cached&lt;/li&gt;
+&lt;li&gt;Certificate - for SSL&lt;/li&gt;
+&lt;li&gt;Domain Name System (DNS) - where your domain name is registered&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Component&lt;/th&gt;
+&lt;th&gt;What we&amp;rsquo;ll use&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Web Server&lt;/td&gt;
+&lt;td&gt;S3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CDN&lt;/td&gt;
+&lt;td&gt;CloudFront&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Certificate&lt;/td&gt;
+&lt;td&gt;ACM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;DNS&lt;/td&gt;
+&lt;td&gt;GoDaddy&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="step-1-setup-your-s3-bucket"&gt;Step 1: Setup your S3 bucket&lt;/h2&gt;
+&lt;p&gt;Create an S3 bucket in your AWS account and enable Static website hosting.
+Uncheck &lt;em&gt;Block all public access&lt;/em&gt; and add a bucket policy. These settings will
+allow your files to be publicly accessed.&lt;/p&gt;</description></item></channel></rss>

@@ -4,9 +4,9 @@ This is the repo for my personal website at GitHub Pages.
 
 ## Requirements
 
-- Hugo Extended 0.146.0+
+- Hugo Extended 0.161.1+
 - Go 1.23+
-- Node.js 20 (see `.nvmrc`)
+- Node.js 20 (see .nvmrc)
 
 ## Cloning
 

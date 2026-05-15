@@ -5,8 +5,8 @@ date: 2025-05-05T22:00:00+08:00
 hero: images/steps-screenshot.png
 menu:
   sidebar:
-    name: "Global gitignore File"
-    identifier: global-gitignore-file
+    name: "Multiple SSH Keys"
+    identifier: multiple-ssh-keys
     parent: git
 ---
 

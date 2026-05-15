@@ -34,7 +34,6 @@ jobs:
       - name: Prepare Hugo and npm modules
         run: |
           hugo mod tidy
-          hugo mod npm pack
 
       - name: Install npm dependencies
         run: npm ci

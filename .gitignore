@@ -5,6 +5,10 @@
 # modules
 node_modules
 
+# hugo transient/generated files
+.hugo_build.lock
+assets/jsconfig.json
+
 # build output
 resources
 public
